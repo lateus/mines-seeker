@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/soundEffects">
+        <file>Effects/mineHit0.wav</file>
+        <file>Effects/mineHit1.wav</file>
+        <file>Effects/mineHit2.wav</file>
+        <file>Effects/mineHit3.wav</file>
+        <file>Effects/mineHit4.wav</file>
+        <file>Effects/mineHit5.wav</file>
+        <file>Effects/mineHit6.wav</file>
+        <file>Effects/mineHit7.wav</file>
+        <file>Effects/newRecord.wav</file>
+        <file>Effects/unlockManyCells.wav</file>
+        <file>Effects/win.wav</file>
+        <file>Effects/lose.wav</file>
+        <file>Effects/hacked.wav</file>
+        <file>intro.wav</file>
+    </qresource>
+</RCC>

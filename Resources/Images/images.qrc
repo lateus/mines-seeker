@@ -1,0 +1,49 @@
+<RCC>
+    <qresource prefix="/images/board">
+        <file>Board/blank.svg</file>
+        <file>Board/cross.svg</file>
+        <file>Board/flag.svg</file>
+        <file>Board/mine.svg</file>
+        <file>Board/number1.svg</file>
+        <file>Board/number2.svg</file>
+        <file>Board/number3.svg</file>
+        <file>Board/number4.svg</file>
+        <file>Board/number5.svg</file>
+        <file>Board/number6.svg</file>
+        <file>Board/number7.svg</file>
+        <file>Board/number8.svg</file>
+        <file>Board/unknown.svg</file>
+        <file>Board/check.svg</file>
+    </qresource>
+    <qresource prefix="/images/arcade">
+        <file>Arcade/ic_pause_24px.svg</file>
+        <file>Arcade/arrowMenuPanel.svg</file>
+        <file>Arcade/angry.svg</file>
+        <file>Arcade/happy.svg</file>
+        <file>Arcade/license.svg</file>
+        <file>Arcade/medal0.svg</file>
+        <file>Arcade/medal1.svg</file>
+        <file>Arcade/medal2.svg</file>
+        <file>Arcade/ninja.svg</file>
+        <file>Arcade/scores.svg</file>
+        <file>Arcade/suspicious.svg</file>
+        <file>Arcade/ic_volume_off_24px.svg</file>
+        <file>Arcade/ic_volume_up_24px.svg</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>appIcon.png</file>
+        <file>QtProject-qtcreator.png</file>
+        <file>Logo512.png</file>
+        <file>Logo512_BG.png</file>
+    </qresource>
+    <qresource prefix="/splash">
+        <file>Splash/cujae.png</file>
+        <file>Splash/tiger.png</file>
+        <file>Splash/cujaeName.png</file>
+        <file>Splash/tigerName.png</file>
+    </qresource>
+    <qresource prefix="/languages">
+        <file>Languages/en.svg</file>
+        <file>Languages/es.svg</file>
+    </qresource>
+</RCC>

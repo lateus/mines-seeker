@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>mines_es.qm</file>
+        <file>qt_es.qm</file>
+        <file>qt_en.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/src">
+        <file>mainqml.qml</file>
+        <file>UIBoard.qml</file>
+        <file>UICell.qml</file>
+        <file>UIArcade.qml</file>
+        <file>About.qml</file>
+        <file>AboutQt.qml</file>
+        <file>RecordViewer.qml</file>
+        <file>RecordViewerPage.qml</file>
+        <file>RecordEntry.qml</file>
+        <file>Ripple.qml</file>
+        <file>License.qml</file>
+        <file>Loading.qml</file>
+        <file>LoadingPopup.qml</file>
+        <file>SavingPopup.qml</file>
+        <file>Statistics.qml</file>
+        <file>Preferences.qml</file>
+    </qresource>
+</RCC>
