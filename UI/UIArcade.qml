@@ -318,14 +318,15 @@ Item {
         id: arcadeData
         board.firstClickClear: settings.boardGeneration === GeneralSettings.FirstClickClear
 
-        onReadyToStart: { // prevent hacking
+        // Disable all validations until they are all free of bugs
+        /*onReadyToStart: { // prevent hacking
             if (!recordManager.checkChecksum() || !recordManager.checkNValidator()) {
                 trapDialog.open()
                 if (soundHacked.volume > 0.0) {
                     soundHacked.play()
                 }
             }
-        }
+        }*/
 
         onBigUnlock: {
             if (soundBigUnlock.volume > 0.0) {
@@ -339,12 +340,13 @@ Item {
         }
 
         onFinished: { // always called after onWin or onLose
-            if (!recordManager.checkChecksum() || !recordManager.checkNValidator()) {
-                trapDialog.open()
-                soundHacked.play()
-            } else {
+            // Disable all validations until they are all free of bugs
+//            if (!recordManager.checkChecksum() || !recordManager.checkNValidator()) {
+//                trapDialog.open()
+//                soundHacked.play()
+//            } else {
                 inputRecordDialog.open()
-            }
+//            }
         }
 
         /*  I can find a fair way to implement the statistics backend
