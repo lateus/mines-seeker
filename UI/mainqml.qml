@@ -11,7 +11,8 @@ ApplicationWindow {
     id: mainWindow
     visible: true
 
-    onVisibleChanged: {
+    // Disable geometry loading until all bugs are fixed
+    /*onVisibleChanged: {
         if (visible) {
             visibility = settings.mainWindowVisibility
             width  = settings.mainWindowSize.width
@@ -35,6 +36,7 @@ ApplicationWindow {
     onHeightChanged: {
         settings.mainWindowSize.height = height
     }
+    */
 
     minimumWidth: 460
     minimumHeight: 500
