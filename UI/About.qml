@@ -37,7 +37,7 @@ Dialog {
                                qsTr("<br><b>Contact info: </b><i><a href=\"%1\">thecrowporation@gmail.com</a>.</i><br>").arg("mailto:thecrowporation@gmail.com")
     property string changelogText: qsTr("<b>v1.0</b> [Oct 10, 2018]<br>" +
                                         "<b>Initial version</b><br>" +
-                                        "<i>   Rmv:</i> <u>Removed compatibility with previous versions</u><br>" +
+                                        "<i>   Rmv:</i> <u>Removed cryptographical protection from the database due to bugs</u><br>" +
                                         "<i>   New:</i> Added mines counter<br>" +
                                         "<i>   New:</i> Added a progress bar<br>" +
                                         "<i>   New:</i> Added internationalization support<br>" +
@@ -53,7 +53,6 @@ Dialog {
                                         "<i>   New:</i> Improved GUI and animations<br>" +
                                         "<i>   New:</i> Improved multimedia support<br>" +
                                         "<i>   New:</i> Improved UI performance<br>" +
-                                        "<i>   New:</i> Improved database cryptographical protection<br>" +
                                         "<i>   Fxd:</i> Fixed a board bug that causes an overflow<br>" +
                                         "<i>   Fxd:</i> Minor bug fixes<br>" +
                                         "<br>") +
