@@ -20,10 +20,6 @@ ApplicationWindow {
     }
 
     onVisibilityChanged: {
-        if (settings.mainWindowVisibility === ApplicationWindow.AutomaticVisibility && visibility === ApplicationWindow.Windowed) {
-            visibility = ApplicationWindow.Maximized
-        }
-
         if (visibility != ApplicationWindow.Hidden) {
             settings.mainWindowVisibility = visibility
             if (visibility != ApplicationWindow.Maximized) {
