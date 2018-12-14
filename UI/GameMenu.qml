@@ -10,7 +10,8 @@ Drawer {
     height: root.height
     dragMargin: 3*Qt.styleHints.startDragDistance
 
-    property alias gameMenuList: listModelMode
+    property alias gameMenuListModel: listModelMode
+    property alias gameMenuListView: listView
 
 
     property var delegateComponentMap: {

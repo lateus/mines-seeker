@@ -35,10 +35,10 @@ Item {
 
     onGameModeChanged: {
         for (var i = Board.BEGINNER; i <= Board.CUSTOM; ++i) {
-            gameMenu.gameMenuList.setProperty(i, "itemChecked", false)
+            gameMenu.gameMenuListModel.setProperty(i, "itemChecked", false)
         }
 
-        gameMenu.gameMenuList.setProperty(gameMode, "itemChecked", true)
+        gameMenu.gameMenuListModel.setProperty(gameMode, "itemChecked", true)
         recordManager.setCurrentTable(gameMode)
     }
 
@@ -253,13 +253,13 @@ Item {
         }
 
         onAccepted: {
-            arcade.changeMode(listView.currentIndex)
+            arcade.changeMode(gameMenu.gameMenuListView.currentIndex)
             gameMenu.close()
         }
         onRejected: {
-            listModelMode.setProperty(gameMode, "itemChecked", false)
-            listModelMode.setProperty(gameMode, "itemChecked", true)
-            listView.currentIndex = gameMode
+            gameMenu.gameMenuListModel.setProperty(gameMode, "itemChecked", false)
+            gameMenu.gameMenuListModel.setProperty(gameMode, "itemChecked", true)
+            gameMenu.gameMenuListView.currentIndex = gameMode
         }
     } // confirmModeChangeDialog
 
@@ -351,9 +351,9 @@ Item {
             gameMenu.close()
         }
         onRejected: {
-            listModelMode.setProperty(gameMode, "itemChecked", false)
-            listModelMode.setProperty(gameMode, "itemChecked", true)
-            listView.currentIndex = gameMode
+            gameMenu.gameMenuListModel.setProperty(gameMode, "itemChecked", false)
+            gameMenu.gameMenuListModel.setProperty(gameMode, "itemChecked", true)
+            gameMenu.gameMenuListView.currentIndex = gameMode
             spinBoxRows.value = boardFrontend.board.customGameRows
             spinBoxColumns.value = boardFrontend.board.customGameColumns
             spinBoxMines.value = boardFrontend.board.customGameMines
