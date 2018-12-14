@@ -17,5 +17,6 @@
         <file>Statistics.qml</file>
         <file>Preferences.qml</file>
         <file>DialogInputRecord.qml</file>
+        <file>DialogPause.qml</file>
     </qresource>
 </RCC>
