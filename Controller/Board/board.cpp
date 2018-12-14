@@ -181,7 +181,6 @@ void Board::setup()
     firstClickRow = firstClickColumn = -1;
     activatedCells = 0;
     setMinesDiscovered(0);
-    setSteps(0);
 #ifdef DEBUG_OUTPUT
     qDebug("Finished board setup.");
     qDebug("ROWS: %d | COLS: %d | MINES: %d", numberOfRows, numberOfColumns, numberOfMines);
@@ -230,10 +229,6 @@ void Board::leftClick(int row, int column)
     } else if (cells[row][column].getActivated()) {
         qInfo("The cell in (%d, %d) was already clicked before.", row, column);
     } else { // no input errors
-        if (!revealingSiblings) {
-            setSteps(getSteps() + 1);
-        }
-
         if (!firstClick) {
             firstClick = true;
             firstClickRow = row;
@@ -338,19 +333,6 @@ void Board::updateProgress()
     double discovered = activatedCells + minesDiscovered;
     progress = discovered/total;
     emit progressChanged(progress);
-}
-
-int Board::getSteps() const
-{
-    return steps;
-}
-
-void Board::setSteps(int value)
-{
-    if (steps != value) {
-        steps = value;
-        emit stepsChanged(steps);
-    }
 }
 
 bool Board::getFirstClickClear() const
@@ -634,7 +616,6 @@ void Board::tryToRevealSiblings(int row, int column)
         revealingSiblings = true;
         revealUnflaggedMinesAround(row, column);
         revealingSiblings = false;
-        setSteps(getSteps() + 1);
         break;
     }
 }

@@ -21,7 +21,6 @@ class Board : public QObject
     Q_PROPERTY(double uiBoardLoadingProgress READ getUiBoardLoadingProgress WRITE setUiBoardLoadingProgress NOTIFY progressChanged)
     Q_PROPERTY(int    minesDiscovered READ getMinesDiscovered NOTIFY minesDiscoveredChanged)
     Q_PROPERTY(bool   running READ getRunning NOTIFY runningChanged)
-    Q_PROPERTY(int    steps READ getSteps WRITE setSteps NOTIFY stepsChanged)
 
     Q_PROPERTY(int maxRows READ getMaxRows CONSTANT)
     Q_PROPERTY(int maxColumns READ getMaxColumns CONSTANT)
@@ -59,9 +58,6 @@ public:
     void setNumberOfMines(int value);
 
     double getProgress() const;
-
-    int getSteps() const;
-    void setSteps(int value);
 
     double getUiBoardLoadingProgress() const;
     void setUiBoardLoadingProgress(double value);
@@ -122,7 +118,6 @@ signals:
     void minesDiscoveredChanged(int m);
     void runningChanged(bool newState);
     void progressChanged(double value);
-    void stepsChanged(int value);
     void uiBoardLoadingProgressChanged(double value);
 
     void uiRowsChanged(int r);
@@ -159,9 +154,6 @@ private:
     int numberOfMines   = beginnerMines;
     double progress     = 0;
     double uiBoardLoadingProgress = 0.0;
-
-    // to calculate the number of steps that gamer needed to complete the board
-    int steps = 0;
 
     // To populate the UIBoard. Wait to update this until the game logic is ready
     int uiRows = beginnerRows;
