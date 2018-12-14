@@ -37,8 +37,6 @@ void RecordsManager::run()
         setEmpty(true);
         setupDatabaseTables();
         setCurrentTable(boardMode);
-        updateChecksum();
-        updateNValidator();
         updateRanking();
         break;
     case ADD:
@@ -54,8 +52,6 @@ void RecordsManager::run()
 #endif
         }
         updateRanking();
-        updateChecksum();
-        updateNValidator();
         break;
     default:
         break;
@@ -81,11 +77,8 @@ bool RecordsManager::setupDatabase(const QString &filePath)
     } else {
         setupDatabaseTables();
         setupTable();
-        if (!alreadyHasCryptographicTable/* || !alreadyHasStatisticsTable*/) {
-            alreadyHasCryptographicTable = true;
+        if (false/* || !alreadyHasStatisticsTable*/) {
 //            alreadyHasStatisticsTable    = true;
-            updateChecksum();
-            updateNValidator();
         }
     }
 //    updateStatistics();
@@ -110,15 +103,6 @@ bool RecordsManager::setupDatabaseTables()
 #endif
             return false;
         }
-    }
-
-    // cryptographic table
-    alreadyHasCryptographicTable = db.tables().contains("CRYPTOGRAPHIC");
-    bool ok = query.exec("CREATE TABLE IF NOT EXISTS 'CRYPTOGRAPHIC' (CHECKSUM BLOB)");
-    if (!ok) {
-#ifdef DEBUG_OUTPUT
-        qCritical() << "CRITICAL ERROR WHILE CREATING TABLE 'CRYPTOGRAPHIC':"<< query.lastError().text();
-#endif
     }
 
     // statistics table
@@ -149,7 +133,7 @@ bool RecordsManager::setupDatabaseTables()
     }
     */
 
-    return ok;
+    return true;
 }
 
 void RecordsManager::setupTable()
@@ -236,8 +220,6 @@ void RecordsManager::setupRecordTemplate()
     }
 
     setCurrentTable(boardMode);
-    updateChecksum();
-    updateNValidator();
 
     if (!ok) {
 #ifdef DEBUG_OUTPUT
@@ -301,148 +283,6 @@ void RecordsManager::updateCurrentMaxRecord()
         setMaxRecordMs(QTime::fromString(customTime1, "mm:ss.zzz").msecsSinceStartOfDay());
         break;
     }
-}
-
-const QByteArray RecordsManager::checksum()
-{
-    QByteArray data;
-    for (int t = 0; t < allTables.count(); ++t) {
-        table->setTable(allTables[t]);
-        table->select();
-        int rows = table->rowCount();
-        int cols = table->columnCount();
-        for (int r = 0; r < rows; ++r) {
-            for (int c = 0; c < cols; ++c) {
-                data = SHA3_512(data + table->record(r).value(c).toByteArray() + ".");
-            }
-        }
-    }
-
-    setCurrentTable(boardMode);
-    return data;
-}
-
-bool RecordsManager::checkChecksum()
-{
-    table->setTable("CRYPTOGRAPHIC");
-    table->select();
-    const QByteArray storedChecksum  = table->record(0).value("CHECKSUM").toByteArray();
-//    fprintf(stderr, "\n-------------------------CHECK CHECKSUM-------------------------\n"
-//                    "[CHK] StoredDB: %s\n", storedChecksum.constData());
-//    fflush(stderr);
-    setCurrentTable(boardMode);
-    const QByteArray currentChecksum = checksum();
-//    fprintf(stderr, "[CHK] Calculated: %s\n", currentChecksum.constData());
-//    fflush(stderr);
-    if (storedChecksum != currentChecksum) {
-//        fprintf(stderr, "[CHK] NO Passed\n\n\n");
-//        fflush(stderr);
-#ifdef DEBUG_OUTPUT
-        qCritical() << "Checksum not match: " << storedChecksum << " != " << currentChecksum;
-#endif
-        return false;
-    }
-//    fprintf(stderr, "[CHK] Passed\n\n\n");
-//    fflush(stderr);
-    return true;
-}
-
-void RecordsManager::updateChecksum()
-{
-    const QByteArray chk = checksum();
-//    fprintf(stderr, "\n-------------------------UPDATE CHECKSUM-------------------------\n"
-//                    "[CHK] CalculatedToSave: %s\n\n\n", chk.constData());
-//    fflush(stderr);
-
-    table->setTable("CRYPTOGRAPHIC");
-    table->select();
-    int rows = table->rowCount();
-
-    QSqlRecord record(table->record());
-    record.setValue("CHECKSUM", chk);
-    if (rows > 0) {
-        table->setRecord(0, record);
-    } else {
-        bool ok;
-        ok = table->insertRecord(0, record);
-        if (!ok) {
-#ifdef DEBUG_OUTPUT
-            qCritical() << "CRITICAL ERROR: [UPDATE CHECKSUM]" << table->lastError().text();
-#endif
-        }
-    }
-    setCurrentTable(boardMode);
-}
-
-const QByteArray RecordsManager::nValidator()
-{
-    table->setTable("CRYPTOGRAPHIC");
-    table->select();
-    QByteArray stored = table->record(1).value("CHECKSUM").toByteArray();
-    setCurrentTable(boardMode);
-    return stored;
-}
-
-bool RecordsManager::checkNValidator()
-{
-    QByteArray hashStored = nValidator();
-//    fprintf(stderr, "\n-------------------------CHECK N-------------------------\n"
-//                    "[N] StoredDB: %s\n", hashStored.constData());
-//    fflush(stderr);
-    QSettings s;
-    QByteArray n = s.value("n").toByteArray();
-//    fprintf(stderr, "[N] StoredReg: %s\n", n.constData());
-//    fflush(stderr);
-    QByteArray hash = SHA3_512(n);
-//    fprintf(stderr, "[N] HashReg: %s\n", hash.constData());
-//    fflush(stderr);
-    if (hashStored != hash) {
-//        fprintf(stderr, "[N] NO Passed\n\n\n");
-//        fflush(stderr);
-#ifdef DEBUG_OUTPUT
-        qCritical() << "NValidation not match: " << hashStored << " != " << hash;
-#endif
-        return false;
-    }
-//    fprintf(stderr, "[N] Passed\n\n\n");
-//    fflush(stderr);
-    return true;
-}
-
-void RecordsManager::updateNValidator()
-{
-    unsigned long long n = QRandomGenerator::system()->generate64();
-//    fprintf(stderr, "\n-------------------------UPDATE N-------------------------\n"
-//                    "[N] Generated: %llu\n", n);
-//    fflush(stderr);
-    QSettings s;
-    QByteArray nStr = QByteArray::number(n);
-//    fprintf(stderr, "[N] Converted: %s\n", nStr.constData());
-//    fflush(stderr);
-    s.setValue("n", nStr);
-    QByteArray hash = SHA3_512(nStr);
-//    fprintf(stderr, "[N] HashToBD: %s\n\n\n", hash.constData());
-//    fflush(stderr);
-
-    table->setTable("CRYPTOGRAPHIC");
-    table->select();
-    int rows = table->rowCount();
-
-    QSqlRecord record(table->record());
-    record.setValue("CHECKSUM", hash);
-    if (rows > 1) {
-        table->setRecord(1, record);
-    } else {
-        bool ok;
-        ok = table->insertRecord(1, record);
-        if (!ok) {
-#ifdef DEBUG_OUTPUT
-            qCritical() << "CRITICAL ERROR: [UPDATE NVALIDATOR]" << table->lastError().text();
-#endif
-        }
-    }
-
-    setCurrentTable(boardMode);
 }
 
 void RecordsManager::reset()

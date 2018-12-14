@@ -292,12 +292,6 @@ public slots:
 //    void updateStatistics();
     void updateRanking();
     void updateCurrentMaxRecord();
-    const QByteArray checksum();
-    bool checkChecksum();
-    void updateChecksum();
-    const QByteArray nValidator();
-    bool checkNValidator();
-    void updateNValidator();
     void reset();
 
 private:
@@ -321,7 +315,6 @@ private:
     int stepsToAdd;
     int recordToAdd;
 
-    bool alreadyHasCryptographicTable = false;
 //    bool alreadyHasStatisticsTable = false;
 
     int totalBeginnerGames = 0;

@@ -318,16 +318,6 @@ Item {
         id: arcadeData
         board.firstClickClear: settings.boardGeneration === GeneralSettings.FirstClickClear
 
-        // Disable all validations until they are all free of bugs
-        /*onReadyToStart: { // prevent hacking
-            if (!recordManager.checkChecksum() || !recordManager.checkNValidator()) {
-                trapDialog.open()
-                if (soundHacked.volume > 0.0) {
-                    soundHacked.play()
-                }
-            }
-        }*/
-
         onBigUnlock: {
             if (soundBigUnlock.volume > 0.0) {
                 soundBigUnlock.play()
@@ -340,13 +330,7 @@ Item {
         }
 
         onFinished: { // always called after onWin or onLose
-            // Disable all validations until they are all free of bugs
-//            if (!recordManager.checkChecksum() || !recordManager.checkNValidator()) {
-//                trapDialog.open()
-//                soundHacked.play()
-//            } else {
                 inputRecordDialog.open()
-//            }
         }
 
         /*  I can find a fair way to implement the statistics backend
@@ -640,46 +624,6 @@ Item {
                 drawer.close()
             }
         }
-    }
-
-    Dialog {
-        id: trapDialog
-        implicitWidth: 500
-        implicitHeight: 300
-
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
-
-        focus: true
-        modal: true
-        title: qsTr("HACK DETECTED")
-        standardButtons: Dialog.Ok
-
-        Text {
-            anchors.fill: parent
-            anchors.bottomMargin: -32
-            clip: true
-            text: qsTr("The database has been manually modified." +
-                       "<br>" +
-                       "This application uses internally a <i>checksum</i> to " +
-                       "cryptographically protect the score data and other settings. " +
-                       "As you tried to hack them, the checksum failed and " +
-                       "the database will be reseted when you close this dialog. " +
-                       "<br><br>" +
-                       "Use this experience to <b>improve yourself</b> and be a " +
-                       "<b>better and honest person</b>.")
-            wrapMode: Text.WordWrap
-        }
-
-        onClosed: {
-            recordManager.reset()
-            soundHacked.stop()
-            if (lastGameCleared) {
-                inputRecordDialog.open()
-            }
-        }
-
     }
 
     DialogInputRecord {
