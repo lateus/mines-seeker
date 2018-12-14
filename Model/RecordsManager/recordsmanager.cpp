@@ -42,7 +42,6 @@ void RecordsManager::run()
     case ADD:
         record.setValue("NAME", playerToAdd);
         record.setValue("TIME", msToAdd);
-        record.setValue("STEPS", stepsToAdd);
         record.setValue("SCORE", recordToAdd);
         static bool ok;
         ok = table->insertRecord(-1, record); // -1 means 'append'
@@ -77,11 +76,7 @@ bool RecordsManager::setupDatabase(const QString &filePath)
     } else {
         setupDatabaseTables();
         setupTable();
-        if (false/* || !alreadyHasStatisticsTable*/) {
-//            alreadyHasStatisticsTable    = true;
-        }
     }
-//    updateStatistics();
     updateRanking();
 
     return true;
@@ -95,7 +90,6 @@ bool RecordsManager::setupDatabaseTables()
         bool ok = query.exec(QString("CREATE TABLE IF NOT EXISTS '%1' ("
                                      "NAME   TEXT NOT NULL,"
                                      "TIME   INTEGER NOT NULL,"
-                                     "STEPS  INTEGER NOT NULL,"
                                      "SCORE  INTEGER NOT NULL)").arg(gameTables[i]));
         if (!ok) {
 #ifdef DEBUG_OUTPUT
@@ -104,34 +98,6 @@ bool RecordsManager::setupDatabaseTables()
             return false;
         }
     }
-
-    // statistics table
-    /*
-    alreadyHasStatisticsTable = db.tables().contains("STATISTICS");
-    ok = query.exec("CREATE TABLE IF NOT EXISTS 'STATISTICS' ("
-                    "TOTALBEGINNERGAMES INTEGER NOT NULL,"
-                    "TOTALMEDIUMGAMES   INTEGER NOT NULL,"
-                    "TOTALEXPERTGAMES   INTEGER NOT NULL,"
-                    "TOTALCUSTOMGAMES   INTEGER NOT NULL,"
-                    "BEGINNERGAMESWIN   INTEGER NOT NULL,"
-                    "MEDIUMGAMESWIN     INTEGER NOT NULL,"
-                    "EXPERTGAMESWIN     INTEGER NOT NULL,"
-                    "CUSTOMGAMESWIN     INTEGER NOT NULL)");
-    if (!ok) {
-#ifdef DEBUG_OUTPUT
-        qCritical() << "CRITICAL ERROR WHILE CREATING TABLE 'STATISTICS':"<< query.lastError().text();
-#endif
-    }
-
-    if (!alreadyHasStatisticsTable) {
-        QSqlQuery query(db);
-        if (!query.exec("INSERT INTO 'STATISTICS' VALUES (0,0,0,0,0,0,0,0)")) {
-#ifdef DEBUG_OUTPUT
-            qCritical() << "CRITICAL ERROR. CANNOT INSERT THE STATISTIC ROW :"<< query.lastError().text();
-#endif
-        }
-    }
-    */
 
     return true;
 }
@@ -146,98 +112,15 @@ void RecordsManager::setupRecordTemplate()
 {
     recordTemplate.append(QSqlField("NAME",  QVariant::String));
     recordTemplate.append(QSqlField("TIME",  QVariant::Int));
-    recordTemplate.append(QSqlField("STEPS", QVariant::Int));
     recordTemplate.append(QSqlField("SCORE", QVariant::Int));
 }
 
-//! ADD GAME
-/*  I can find a fair way to implement the statistics backend
- *  because I cant' know who user just lose, so I can't count
- *  the losed games for a particular user.
- */
-/*bool RecordsManager::addGame(int mode, bool win)
-{
-    table->setTable("STATISTICS");
-    table->select();
-    if (table->rowCount() == 0) {
-        table->insertRow(0);
-    }
-    bool ok = true;
-    QSqlRecord stat(table->record(0));
-    switch (Board::BOARDMODE(mode)) {
-    case Board::BEGINNER:
-        stat.setValue("TOTALBEGINNERGAMES", totalBeginnerGames + 1);
-        if (win) {
-            stat.setValue("BEGINNERGAMESWIN", beginnerGamesWin + 1);
-        }
-        ok = table->setRecord(0, stat);
-        if (ok) {
-            setTotalBeginnerGames(totalBeginnerGames + 1);
-            if (win) {
-                setBeginnerGamesWin(beginnerGamesWin + 1);
-            }
-        }
-        break;
-    case Board::MEDIUM:
-        stat.setValue("TOTALMEDIUMGAMES", totalMediumGames + 1);
-        if (win) {
-            stat.setValue("MEDIUMGAMESWIN", mediumGamesWin + 1);
-        }
-        ok = table->setRecord(0, stat);
-        if (ok) {
-            setTotalMediumGames(totalMediumGames + 1);
-            if (win) {
-                setMediumGamesWin(mediumGamesWin + 1);
-            }
-        }
-        break;
-    case Board::EXPERT:
-        stat.setValue("TOTALEXPERTGAMES", totalExpertGames + 1);
-        if (win) {
-            stat.setValue("EXPERTGAMESWIN", expertGamesWin + 1);
-        }
-        ok = table->setRecord(0, stat);
-        if (ok) {
-            setTotalExpertGames(totalExpertGames + 1);
-            if (win) {
-                setExpertGamesWin(expertGamesWin + 1);
-            }
-        }
-        break;
-    case Board::CUSTOM:
-        stat.setValue("TOTALCUSTOMGAMES", totalCustomGames + 1);
-        if (win) {
-            stat.setValue("CUSTOMGAMESWIN", customGamesWin + 1);
-        }
-        ok = table->setRecord(0, stat);
-        if (ok) {
-            setTotalCustomGames(totalCustomGames + 1);
-            if (win) {
-                setCustomGamesWin(customGamesWin + 1);
-            }
-        }
-        break;
-    }
-
-    setCurrentTable(boardMode);
-
-    if (!ok) {
-#ifdef DEBUG_OUTPUT
-        qCritical() << "CRITICAL ERROR: CANNOT SAVE RECORD IN TABLE 'STATISTICS':"<< table->lastError().text();
-#endif
-    }
-
-    return ok;
-}
-*/
-
 //! ADD RECORD
-bool RecordsManager::addRecord(const QString &playerName, int ms, int steps, int record)
+bool RecordsManager::addRecord(const QString &playerName, int ms, int record)
 {
     action = ADD;
     playerToAdd = playerName;
     msToAdd = ms;
-    stepsToAdd = steps;
     recordToAdd = record;
     start();
     return true;
@@ -394,30 +277,6 @@ void RecordsManager::setTotalBeginnerGames(int value)
         emit totalBeginnerGamesChanged();
     }
 }
-
-/*  I can find a fair way to implement the statistics backend
- *  because I cant' know who user just lose, so I can't count
- *  the losed games for a particular user.
- */
-/*void RecordsManager::updateStatistics()
-{
-    table->setTable("STATISTICS");
-    table->select();
-
-    QSqlRecord stat(table->record(0));
-    setTotalBeginnerGames(stat.value("TOTALBEGINNERGAMES").toInt());
-    setTotalMediumGames(stat.value("TOTALMEDIUMGAMES").toInt());
-    setTotalExpertGames(stat.value("TOTALEXPERTGAMES").toInt());
-    setTotalCustomGames(stat.value("TOTALCUSTOMGAMES").toInt());
-
-    setBeginnerGamesWin(stat.value("BEGINNERGAMESWIN").toInt());
-    setBeginnerGamesWin(stat.value("MEDIUMGAMESWIN").toInt());
-    setBeginnerGamesWin(stat.value("EXPERTGAMESWIN").toInt());
-    setBeginnerGamesWin(stat.value("CUSTOMGAMESWIN").toInt());
-
-    setCurrentTable(boardMode);
-}
-*/
 
 void RecordsManager::updateRanking()
 {

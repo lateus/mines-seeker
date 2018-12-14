@@ -146,7 +146,7 @@ Dialog {
     property int record: (boardFrontend.steps + 1)*1000 - arcade.recordMs
     onAccepted: {
         if (lastGameCleared && textFieldName.acceptableInput) {
-            recordManager.addRecord(textFieldName.text, arcade.recordMs, boardFrontend.steps, record)
+            recordManager.addRecord(textFieldName.text, arcade.recordMs, record)
             if (checkBoxRememberUsername.checked) {
                 arcade.username = textFieldName.text
             }

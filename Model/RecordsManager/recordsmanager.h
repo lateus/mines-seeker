@@ -130,12 +130,8 @@ public:
     explicit RecordsManager(const QString &filePath = "./records.db", QObject *parent = nullptr);
     ~RecordsManager() override;
 
-    /*  I can find a fair way to implement the statistics backend
-     *  because I cant' know who user just lose, so I can't count
-     *  the losed games for a particular user.
-     */
-//    Q_INVOKABLE bool addGame(int mode, bool win = false);
-    Q_INVOKABLE bool addRecord(const QString &playerName, int ms, int steps, int record);
+    // Export this functions to QML engine
+    Q_INVOKABLE bool addRecord(const QString &playerName, int ms, int record);
     Q_INVOKABLE void setCurrentTable(int mode);
 
     int getMaxRecordsAllowed() const;
@@ -289,7 +285,6 @@ signals:
     void customGamesWinChanged();
 
 public slots:
-//    void updateStatistics();
     void updateRanking();
     void updateCurrentMaxRecord();
     void reset();
@@ -297,7 +292,7 @@ public slots:
 private:
     QSqlDatabase db;
     const QStringList gameTables = QStringList() << "BEGINNER" << "MEDIUM" << "EXPERT" << "CUSTOM";
-    const QStringList allTables  = QStringList() << "BEGINNER" << "MEDIUM" << "EXPERT" << "CUSTOM"/* << "STATISTICS"*/;
+    const QStringList allTables  = QStringList() << "BEGINNER" << "MEDIUM" << "EXPERT" << "CUSTOM";
     QSqlTableModel *table = nullptr;
     QSqlRecord recordTemplate;
     int maxRecordsAllowed = 10;
@@ -312,10 +307,7 @@ private:
     // to add player
     QString playerToAdd;
     int msToAdd;
-    int stepsToAdd;
     int recordToAdd;
-
-//    bool alreadyHasStatisticsTable = false;
 
     int totalBeginnerGames = 0;
     int totalMediumGames   = 0;

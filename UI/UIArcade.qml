@@ -332,14 +332,8 @@ Item {
         onFinished: { // always called after onWin or onLose
                 inputRecordDialog.open()
         }
-
-        /*  I can find a fair way to implement the statistics backend
-         *  because I cant' know who user just lose, so I can't count
-         *  the losed games for a particular user.
-         */
         onWin: {
             lastGameCleared = true
-//            recordManager.addGame(gameMode, true)
         }
 
         onLose: {
@@ -347,7 +341,6 @@ Item {
                 soundMineHit.play()
             }
             lastGameCleared = false
-//            recordManager.addGame(gameMode, false)
         }
     }
 
@@ -435,19 +428,7 @@ Item {
             }
 
 
-            // Statistics
-
-            /*  I can find a fair way to implement the statistics backend
-             *  because I cant' know who user just lose, so I can't count
-             *  the losed games for a particular user.
-             */
-            /*ListElement {
-                type: "ItemDelegate"
-                typeText: "Statistics"
-                mode: -1
-                text: "Statistics"
-                itemChecked: false
-            }*/
+            // Statistics & Scores
             ListElement {
                 type: "ItemDelegate"
                 typeText: "Statistics"
@@ -758,16 +739,7 @@ Item {
         }
     } // inputRowsColumnsDialog
 
-    // Statistics
-    Statistics {
-        id: statistics
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
-
-        modal: true
-    }
-
+    // Records
     RecordViewer {
         id: recordViewer
         x: (parent.width - width) / 2
