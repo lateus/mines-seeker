@@ -12,6 +12,9 @@ Dialog {
         x: parent ? (parent.width - width) / 2 : 0
         y: parent ? (parent.height - height) / 2 : 0
         parent: Overlay.overlay
+
+        implicitWidth: 400
+
         modal: true
         standardButtons: Dialog.Yes | Dialog.No
         title: qsTr("Confirm statistics full reset")
@@ -29,6 +32,9 @@ Dialog {
         x: parent ? (parent.width - width) / 2 : 0
         y: parent ? (parent.height - height) / 2 : 0
         parent: Overlay.overlay
+
+        implicitWidth: 400
+
         modal: true
         standardButtons: Dialog.Yes | Dialog.No
         title: dialogConfirmReset1.title

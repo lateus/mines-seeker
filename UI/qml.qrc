@@ -19,5 +19,6 @@
         <file>DialogPause.qml</file>
         <file>GameMenu.qml</file>
         <file>GameToolbar.qml</file>
+        <file>GameLanguage.qml</file>
     </qresource>
 </RCC>
