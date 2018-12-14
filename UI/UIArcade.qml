@@ -270,7 +270,7 @@ Item {
         y: (parent.height - height) / 2
         parent: Overlay.overlay
 
-        implicitWidth: 300
+        implicitWidth: 400
 
         focus: true
         modal: true
