@@ -14,7 +14,6 @@
         <file>Loading.qml</file>
         <file>LoadingPopup.qml</file>
         <file>SavingPopup.qml</file>
-        <file>Statistics.qml</file>
         <file>Preferences.qml</file>
         <file>DialogInputRecord.qml</file>
         <file>DialogPause.qml</file>
