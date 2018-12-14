@@ -18,5 +18,6 @@
         <file>DialogInputRecord.qml</file>
         <file>DialogPause.qml</file>
         <file>GameMenu.qml</file>
+        <file>GameToolbar.qml</file>
     </qresource>
 </RCC>
