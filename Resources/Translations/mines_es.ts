@@ -15,41 +15,41 @@
     </message>
     <message>
         <location filename="../../UI/About.qml" line="38"/>
-        <source>&lt;b&gt;v1.0&lt;/b&gt; [Oct 10, 2018]&lt;br&gt;&lt;b&gt;Initial version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removed compatibility with previous versions&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added mines counter&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a progress bar&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added internationalization support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added spanish translation&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added splash screen&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added more sound effects&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a busy indicator&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added &lt;i&gt;Preferences&lt;/i&gt; menu&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added option to reveal siblings with a single click&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added company logo&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Now the database access is asynchronous&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved accesibility&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved multimedia support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved UI performance&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved database cryptographical protection&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Fixed a board bug that causes an overflow&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Minor bug fixes&lt;br&gt;&lt;br&gt;</source>
-        <translation>&lt;b&gt;v1.0&lt;/b&gt; [Oct 10, 2018]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la compatiblidad con versiones anteriores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora al hacer doble click en una celda activa se desbloquean las aledañas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la protección criptográfica de la base de datos&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
+        <source>&lt;b&gt;v1.0&lt;/b&gt; [Oct 10, 2018]&lt;br&gt;&lt;b&gt;Initial version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removed cryptographical protection from the database due to bugs&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added mines counter&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a progress bar&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added internationalization support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added spanish translation&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added splash screen&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added more sound effects&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a busy indicator&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added &lt;i&gt;Preferences&lt;/i&gt; menu&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added option to reveal siblings with a single click&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added company logo&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Now the database access is asynchronous&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved accesibility&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved multimedia support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved UI performance&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Fixed a board bug that causes an overflow&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Minor bug fixes&lt;br&gt;&lt;br&gt;</source>
+        <translation>&lt;b&gt;v1.0&lt;/b&gt; [Oct 10, 2018]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la protección criptográfica de la base de datos debido a errores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes con un solo clic&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="60"/>
+        <location filename="../../UI/About.qml" line="59"/>
         <source>&lt;b&gt;v0.3&lt;/b&gt;a [Oct 4, 2018]&lt;br&gt;&lt;b&gt;Third &lt;i&gt;alpha&lt;/i&gt; version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Score database is now cryptographically signed&lt;br&gt;&lt;br&gt;</source>
         <translation>&lt;b&gt;v0.3&lt;/b&gt;a [Oct 4, 2018]&lt;br&gt;&lt;b&gt;Tercera versión &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; La base de datos de records está ahora firmada criptográficamente&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="64"/>
+        <location filename="../../UI/About.qml" line="63"/>
         <source>&lt;b&gt;v0.2&lt;/b&gt;a [Oct 2, 2018]&lt;br&gt;&lt;b&gt;Second &lt;i&gt;alpha&lt;/i&gt; version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Drastically improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added scores&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Save and restore the application state&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added sound effects&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Several bug fixes&lt;br&gt;&lt;br&gt;</source>
         <translation>&lt;b&gt;v0.2&lt;/b&gt;a [Oct 2, 2018]&lt;br&gt;&lt;b&gt;Segunda versión  &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; GUI y animaciones mejoradas drásticamente&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Agregados récords&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Guardado y carga del estado de la aplicación&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Efectos de sonido&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="72"/>
+        <location filename="../../UI/About.qml" line="71"/>
         <source>&lt;b&gt;v0.1&lt;/b&gt;a [Sept 24, 2018]&lt;br&gt;&lt;b&gt;First &lt;i&gt;alpha&lt;/i&gt; version&lt;/b&gt;&lt;br&gt;</source>
         <translation>&lt;b&gt;v0.1&lt;/b&gt;a [Sept 24, 2018]&lt;br&gt;&lt;b&gt;Primera versión &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="74"/>
+        <location filename="../../UI/About.qml" line="73"/>
         <source>Special thanks to &lt;i&gt;Edel&lt;/i&gt;, who figure out how to discover surrounded cells and how to resize the board properly.&lt;br&gt;Thanks to the users &lt;i&gt;littlerobotsoundfactory&lt;/i&gt;, &lt;i&gt;fins&lt;/i&gt;, and &lt;i&gt;mativve&lt;/i&gt; from &lt;a href=&quot;%1&quot;&gt;freesound.com&lt;/a&gt; for their free fanzy sounds effects.&lt;br&gt;</source>
         <translation>Un agradecimiento especial a &lt;i&gt;Edel&lt;/i&gt;, quien se figuró cómo descubrir las celdas adyacentes y cómo redimensionar apropiadamente el tablero. &lt;br&gt;Gracias a los usuarios &lt;i&gt;littlerobotsoundfactory&lt;/i&gt;, &lt;i&gt;fins&lt;/i&gt;, y &lt;i&gt;mativve&lt;/i&gt; de &lt;a href=&quot;%1&quot;&gt;freesound.com&lt;/a&gt; por sus divertidos y libres efectos de sonido.&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="151"/>
+        <location filename="../../UI/About.qml" line="150"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="160"/>
+        <location filename="../../UI/About.qml" line="159"/>
         <source>Changelog</source>
         <translation>Cambios</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="169"/>
+        <location filename="../../UI/About.qml" line="168"/>
         <source>Greetings</source>
         <translation>Gracias</translation>
     </message>
@@ -144,22 +144,22 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../main.cpp" line="73"/>
+        <location filename="../../Controller/main.cpp" line="76"/>
         <source>Loading fonts...</source>
         <translation>Cargando fuentes...</translation>
     </message>
     <message>
-        <location filename="../../main.cpp" line="93"/>
+        <location filename="../../Controller/main.cpp" line="96"/>
         <source>Loading scores...</source>
         <translation>Cargando récords...</translation>
     </message>
     <message>
-        <location filename="../../main.cpp" line="98"/>
+        <location filename="../../Controller/main.cpp" line="101"/>
         <source>Registering C++ types into QML engine...</source>
         <translation>Registrando los tipos de C++ en QML...</translation>
     </message>
     <message>
-        <location filename="../../main.cpp" line="110"/>
+        <location filename="../../Controller/main.cpp" line="113"/>
         <source>Loading UI...</source>
         <translation>Cargando la interfaz de usuario...</translation>
     </message>
@@ -290,25 +290,25 @@
     <name>UIArcade</name>
     <message>
         <location filename="../../UI/UIArcade.qml" line="19"/>
-        <location filename="../../UI/UIArcade.qml" line="398"/>
+        <location filename="../../UI/UIArcade.qml" line="400"/>
         <source>Beginner</source>
         <translation>Principiante</translation>
     </message>
     <message>
         <location filename="../../UI/UIArcade.qml" line="19"/>
-        <location filename="../../UI/UIArcade.qml" line="399"/>
+        <location filename="../../UI/UIArcade.qml" line="401"/>
         <source>Medium</source>
         <translation>Intermedio</translation>
     </message>
     <message>
         <location filename="../../UI/UIArcade.qml" line="19"/>
-        <location filename="../../UI/UIArcade.qml" line="400"/>
+        <location filename="../../UI/UIArcade.qml" line="402"/>
         <source>Expert</source>
         <translation>Experto</translation>
     </message>
     <message>
         <location filename="../../UI/UIArcade.qml" line="19"/>
-        <location filename="../../UI/UIArcade.qml" line="401"/>
+        <location filename="../../UI/UIArcade.qml" line="403"/>
         <source>Custom</source>
         <translation>Personalizado</translation>
     </message>
@@ -348,138 +348,138 @@
         <translation>Minas:</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="397"/>
+        <location filename="../../UI/UIArcade.qml" line="399"/>
         <source>Play mode</source>
         <translation>Modo de juego</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="402"/>
+        <location filename="../../UI/UIArcade.qml" line="404"/>
         <source>Statistics</source>
         <translation>Estadísticas</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="403"/>
+        <location filename="../../UI/UIArcade.qml" line="405"/>
         <source>Scores</source>
         <translation>Récords</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="404"/>
+        <location filename="../../UI/UIArcade.qml" line="406"/>
         <source>Settings</source>
         <translation>Configuración</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="405"/>
+        <location filename="../../UI/UIArcade.qml" line="407"/>
         <source>Preferences</source>
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="406"/>
+        <location filename="../../UI/UIArcade.qml" line="408"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="408"/>
+        <location filename="../../UI/UIArcade.qml" line="410"/>
         <source>About Qt</source>
         <translation>Acerca de Qt</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="409"/>
+        <location filename="../../UI/UIArcade.qml" line="411"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="654"/>
+        <location filename="../../UI/UIArcade.qml" line="656"/>
         <source>HACK DETECTED</source>
         <translation>HACKEO DETECTADO</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="661"/>
+        <location filename="../../UI/UIArcade.qml" line="663"/>
         <source>The database has been manually modified.&lt;br&gt;This application uses internally a &lt;i&gt;checksum&lt;/i&gt; to cryptographically protect the score data and other settings. As you tried to hack them, the checksum failed and the database will be reseted when you close this dialog. &lt;br&gt;&lt;br&gt;Use this experience to &lt;b&gt;improve yourself&lt;/b&gt; and be a &lt;b&gt;better and honest person&lt;/b&gt;.</source>
         <translation>La base de datos ha sido modificada manualmente.&lt;br&gt;Esta aplicación usa internamente un &lt;i&gt;checksum&lt;/i&gt; para proteger criptográficamente los récords y otros datos. Al intentar hackearlos, el checksum falló, por lo que la base de datos de récords será borrada al cerrar este diálogo. &lt;br&gt;&lt;br&gt;Use esta experiencia para &lt;b&gt;crecerse usted mismo&lt;/b&gt; y ser una &lt;b&gt;mejor y más honesta persona&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="696"/>
+        <location filename="../../UI/UIArcade.qml" line="698"/>
         <source>CONGRATULATIONS!</source>
         <translation>¡FELICIDADES!</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="727"/>
+        <location filename="../../UI/UIArcade.qml" line="729"/>
         <source>&lt;b&gt;NEW RECORD!&lt;/b&gt;&lt;br&gt;</source>
         <translation>&lt;b&gt;¡NUEVO RÉCORD!&lt;/b&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="754"/>
+        <location filename="../../UI/UIArcade.qml" line="756"/>
         <source>&lt;b&gt;Your score: </source>
         <translation>&lt;b&gt;Tu récord: </translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="759"/>
+        <location filename="../../UI/UIArcade.qml" line="761"/>
         <source>Record: </source>
         <translation>Récord: </translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="765"/>
+        <location filename="../../UI/UIArcade.qml" line="767"/>
         <source>Enter your name:</source>
         <translation>Ingrese su nombre:</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="765"/>
+        <location filename="../../UI/UIArcade.qml" line="767"/>
         <source>&lt;b&gt;You have lost&lt;/b&gt;</source>
         <translation>&lt;b&gt;Has perdido&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="774"/>
+        <location filename="../../UI/UIArcade.qml" line="776"/>
         <source>Name</source>
         <translation>Nombre</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="793"/>
+        <location filename="../../UI/UIArcade.qml" line="795"/>
         <source>Remember this username</source>
         <translation>Recordar este nombre de usuario</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="842"/>
+        <location filename="../../UI/UIArcade.qml" line="845"/>
         <source>PAUSED</source>
         <translation>PAUSADO</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="845"/>
+        <location filename="../../UI/UIArcade.qml" line="848"/>
         <source>Click anywhere to resume</source>
         <translation>Click dondequiera para continuar</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="875"/>
+        <location filename="../../UI/UIArcade.qml" line="878"/>
         <source>Confirm mode change</source>
         <translation>Confirmar cambio de modo</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="880"/>
-        <location filename="../../UI/UIArcade.qml" line="969"/>
+        <location filename="../../UI/UIArcade.qml" line="883"/>
+        <location filename="../../UI/UIArcade.qml" line="972"/>
         <source>&lt;b&gt;&lt;i&gt;Changing the mode will end the current game.&lt;/i&gt;&lt;/b&gt;&lt;br&gt;Continue?</source>
         <translation>&lt;b&gt;&lt;i&gt;Cambiar el modo terminará la partida actual.&lt;/i&gt;&lt;/b&gt;&lt;br&gt;¿Continuar?</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="904"/>
+        <location filename="../../UI/UIArcade.qml" line="907"/>
         <source>Custom mode</source>
         <translation>Modo personalizado</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="916"/>
+        <location filename="../../UI/UIArcade.qml" line="919"/>
         <source>Please enter the rows, columns and mines:</source>
         <translation>Ingrese las filas, columnas y minas:</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="923"/>
+        <location filename="../../UI/UIArcade.qml" line="926"/>
         <source>Rows</source>
         <translation>Filas</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="938"/>
+        <location filename="../../UI/UIArcade.qml" line="941"/>
         <source>Columns</source>
         <translation>Columnas</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="953"/>
+        <location filename="../../UI/UIArcade.qml" line="956"/>
         <source>Mines</source>
         <translation>Minas</translation>
     </message>
