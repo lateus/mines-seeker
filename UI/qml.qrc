@@ -21,5 +21,6 @@
         <file>GameToolbar.qml</file>
         <file>GameLanguage.qml</file>
         <file>DialogConfirmMode.qml</file>
+        <file>DialogCustomMode.qml</file>
     </qresource>
 </RCC>
