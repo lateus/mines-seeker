@@ -3,6 +3,9 @@ import QtQuick.Controls 2.12
 
 Dialog {
     id: root
+
+    anchors.centerIn: parent
+
     implicitWidth: 800
     implicitHeight: 500
     modal: true

@@ -241,27 +241,16 @@ Item {
     // Records
     RecordViewer {
         id: recordViewer
-        anchors.centerIn: parent
-
-        modal: true
     }
 
     // Settings
     Preferences {
         id: preferencestDialog
-        anchors.centerIn: parent
-
-        implicitWidth: 500
-        implicitHeight: 450
     }
 
     // About
     About {
         id: aboutDialog
-        anchors.centerIn: parent
-
-        source: "qrc:/images/appIcon.png"
-        sourceSize: "128x128"
         simple: settings.firstTime
         changelogFirst: settings.firstTimeAfterUpgrade
 
@@ -272,13 +261,8 @@ Item {
     }
     AboutQt {
         id: aboutQtDialog
-        anchors.centerIn: parent
-
-        source: "qrc:/images/QtProject-qtcreator.png"
-        sourceSize: "128x128"
     }
     License {
         id: licenseDialog
-        anchors.centerIn: parent
     }
 }

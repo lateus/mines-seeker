@@ -3,6 +3,12 @@ import QtQuick.Controls 2.12
 
 Dialog {
     id: root
+
+    anchors.centerIn: parent
+
+    implicitWidth: 500
+    implicitHeight: 450
+
     modal: true
     title: qsTr("Preferences ")
     standardButtons: Dialog.Apply | Dialog.Reset | Dialog.Close

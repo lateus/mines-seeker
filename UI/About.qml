@@ -4,6 +4,9 @@ import QtQuick.Controls.Material 2.12
 
 Dialog {
     id: root
+
+    anchors.centerIn: parent
+
     modal: true
     implicitWidth: 420
     implicitHeight: parent.height * 0.9
@@ -17,7 +20,7 @@ Dialog {
         }
     }
 
-    property string source: "qrc:/images/icons/appIcon.png"
+    property string source: "qrc:/images/Logo512.png"
     property string sourceSize: "128x128"
 
 
@@ -111,7 +114,7 @@ Dialog {
         Image {
             id: imageAppIcon
             anchors.fill: parent
-            source: "qrc:/images/Logo512.png"
+            source: root.source
             sourceSize: root.sourceSize
             property bool once: true
         }

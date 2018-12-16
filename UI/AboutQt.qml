@@ -3,13 +3,16 @@ import QtQuick.Controls 2.12
 
 Dialog {
     id: root
+
+    anchors.centerIn: parent
+
     modal: true
     width: 410
     height: 430
     title: qsTr("About Qt")
     standardButtons: Dialog.Close
 
-    property string source: "qrc:/images/icons/QtProject-qtcreator.png"
+    property string source: "qrc:/images/QtProject-qtcreator.png"
     property string sourceSize: "128x128"
 
     Rectangle {

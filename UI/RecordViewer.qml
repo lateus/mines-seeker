@@ -4,6 +4,10 @@ import QtQuick.Controls 2.12
 Dialog {
     id: dialogScores
     title: qsTr("Scores")
+
+    anchors.centerIn: parent
+
+    modal: true
     implicitWidth: 650
     implicitHeight: 420
     standardButtons: Dialog.Close | Dialog.Reset
