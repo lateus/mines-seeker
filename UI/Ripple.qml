@@ -1,5 +1,5 @@
-import QtQuick 2.11
-import QtQuick.Controls.Material.impl 2.4 // 'private' module
+import QtQuick 2.12
+import QtQuick.Controls.Material.impl 2.12 // 'private' module
 
 // Tested in Qt 5.11. This is from Qt source code. So it's is no garranty that this code remains compatible in future versions of Qt.
 Item {
