@@ -20,7 +20,7 @@ Dialog {
         }
     }
 
-    property string source: "qrc:/images/Logo512.png"
+    property string source: "qrc:/images/appIcon.png"
     property string sourceSize: "128x128"
 
 
@@ -114,7 +114,7 @@ Dialog {
         Image {
             id: imageAppIcon
             anchors.fill: parent
-            source: root.source
+            source: "qrc:/images/Logo512.png"
             sourceSize: root.sourceSize
             property bool once: true
         }
