@@ -55,7 +55,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    Resources/COPYING.GPLv2
+    Resources/COPYING.GPLv2 \
+    README.md \
+    TODO.md
 
 win32 {
     RC_FILE = Resources/resManifest.rc
