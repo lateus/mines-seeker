@@ -11,33 +11,6 @@ ApplicationWindow {
     id: mainWindow
     visible: true
 
-    // Disable geometry loading until all bugs are fixed
-    /*onVisibleChanged: {
-        if (visible) {
-            visibility = settings.mainWindowVisibility
-            width  = settings.mainWindowSize.width
-            height = settings.mainWindowSize.height
-        }
-    }
-
-    onVisibilityChanged: {
-        if (visibility != ApplicationWindow.Hidden) {
-            settings.mainWindowVisibility = visibility
-            if (visibility != ApplicationWindow.Maximized) {
-                width  = settings.mainWindowSize.width
-                height = settings.mainWindowSize.height
-            }
-        }
-    }
-
-    onWidthChanged: {
-        settings.mainWindowSize.width = width
-    }
-    onHeightChanged: {
-        settings.mainWindowSize.height = height
-    }
-    */
-
     minimumWidth: 460
     minimumHeight: 500
     title: qsTr("Mines Seeker")
