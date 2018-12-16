@@ -13,7 +13,7 @@ Enjoy!
 -----------------------------------------------------------------------------------------------------------------------------------
 
 ## Build instructions
-The minimal required Qt version is Qt 5.11.0. You can build it by opening the project file in Qt Creator and clicking the *Build* button, or by passing the same project file to the `qmake` tool. Currently, there is no official support for CMake.
+The minimal required Qt version is Qt 5.12.0. You can build it by opening the project file in Qt Creator and clicking the *Build* button, or by passing the same project file to the `qmake` tool. Currently, there is no official support for CMake.
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
