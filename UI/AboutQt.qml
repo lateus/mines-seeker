@@ -58,7 +58,7 @@ Dialog {
             width: scrollView.width
             height: scrollView.height
             onLinkActivated: { Qt.openUrlExternally(link) }
-            text: qsTr("<p><b>This program uses Qt version %1.</b></p><br>").arg("5.11.0") +
+            text: qsTr("<p><b>This program uses Qt version %1.</b></p><br>").arg("5.12.0") +
                           qsTr("<p>Qt is a <i>C++ toolkit for cross-platform application " +
                                "development</i>.</p>" +
                                "<p>Qt provides single-source portability across all major desktop and mobile " +
