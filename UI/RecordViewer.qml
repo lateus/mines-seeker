@@ -40,7 +40,7 @@ Dialog {
         title: dialogConfirmReset1.title
 
         Text {
-            text: qsTr("This operation cannot be undone. It's permanent.<br>" +
+            text: qsTr("This operation cannot be undone.<br>It's permanent.<br>" +
                        "<b><i>Reset anyway?</i></b>")
         }
 
