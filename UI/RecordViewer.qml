@@ -9,9 +9,7 @@ Dialog {
     standardButtons: Dialog.Close | Dialog.Reset
     Dialog {
         id: dialogConfirmReset1
-        x: parent ? (parent.width - width) / 2 : 0
-        y: parent ? (parent.height - height) / 2 : 0
-        parent: Overlay.overlay
+        anchors.centerIn: parent
 
         implicitWidth: 400
 
@@ -29,9 +27,7 @@ Dialog {
     }
     Dialog {
         id: dialogConfirmReset2
-        x: parent ? (parent.width - width) / 2 : 0
-        y: parent ? (parent.height - height) / 2 : 0
-        parent: Overlay.overlay
+        anchors.centerIn: parent
 
         implicitWidth: 400
 

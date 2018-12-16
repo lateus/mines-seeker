@@ -3,9 +3,7 @@ import QtQuick.Controls 2.12
 Dialog {
     id: confirmModeChangeDialog
 
-    x: (parent.width - width) / 2
-    y: (parent.height - height) / 2
-    parent: Overlay.overlay
+    anchors.centerIn: parent
 
     implicitWidth: 400
 

@@ -8,9 +8,7 @@ import Minesweeper 1.0
 Dialog {
     id: inputRowsColumnsDialog
 
-    x: (parent.width - width) / 2
-    y: (parent.height - height) / 2
-    parent: Overlay.overlay
+    anchors.centerIn: parent
 
     implicitWidth: 400
 

@@ -4,9 +4,8 @@ import QtQuick.Controls 2.12
 Dialog {
     id: pauseDialog
 
-    x: (parent.width - width) / 2
-    y: (parent.height - height) / 2
-    parent: Overlay.overlay
+    anchors.centerIn: parent
+
     modal: true
 
     title: qsTr("PAUSED")

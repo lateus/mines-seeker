@@ -5,9 +5,7 @@ import QtQuick.Layouts 1.12
 Dialog {
     id: inputRecordDialog
 
-    x: (parent.width - width) / 2
-    y: (parent.height - height) / 2
-    parent: Overlay.overlay
+    anchors.centerIn: parent
     clip: true
 
     implicitWidth:  lastGameCleared && newScore ? 410 : lastGameCleared ? 360 : 230

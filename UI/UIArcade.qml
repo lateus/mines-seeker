@@ -206,9 +206,7 @@ Item {
     }
 
     SavingPopup {
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
+        anchors.centerIn: parent
         visible: recordManager.busy
         modal: true
         onOpened: {
@@ -243,9 +241,7 @@ Item {
     // Records
     RecordViewer {
         id: recordViewer
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
+        anchors.centerIn: parent
 
         modal: true
     }
@@ -253,9 +249,7 @@ Item {
     // Settings
     Preferences {
         id: preferencestDialog
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
+        anchors.centerIn: parent
 
         implicitWidth: 500
         implicitHeight: 450
@@ -264,9 +258,7 @@ Item {
     // About
     About {
         id: aboutDialog
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
+        anchors.centerIn: parent
 
         source: "qrc:/images/appIcon.png"
         sourceSize: "128x128"
@@ -280,17 +272,13 @@ Item {
     }
     AboutQt {
         id: aboutQtDialog
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
+        anchors.centerIn: parent
 
         source: "qrc:/images/QtProject-qtcreator.png"
         sourceSize: "128x128"
     }
     License {
         id: licenseDialog
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        parent: Overlay.overlay
+        anchors.centerIn: parent
     }
 }
