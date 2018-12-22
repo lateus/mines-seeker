@@ -8,7 +8,7 @@ Dialog {
     anchors.centerIn: parent
     clip: true
 
-    implicitWidth:  lastGameCleared && newScore ? 410 : lastGameCleared ? 360 : 230
+    implicitWidth:  lastGameCleared && newScore ? 410 : lastGameCleared ? 360 : 250
     implicitHeight: lastGameCleared && newScore ? 390 : lastGameCleared ? 290 : 130
 
     focus: true
