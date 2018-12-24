@@ -44,11 +44,11 @@ int main(int argc, char *argv[])
 
     // INTERNACIONALIZATION
     QTranslator qtTranslator;
-    qtTranslator.load(QLocale(), QStringLiteral("qt"), QStringLiteral("_"), ":/translations");
+    qtTranslator.load(QLocale(settings.getLanguage()), QStringLiteral("qt"), QStringLiteral("_"), ":/translations");
     app.installTranslator(&qtTranslator);
 
     QTranslator myAppTranslator;
-    myAppTranslator.load(QLocale(), QStringLiteral("mines"), QStringLiteral("_"), ":/translations");
+    myAppTranslator.load(QLocale(settings.getLanguage()), QStringLiteral("mines"), QStringLiteral("_"), ":/translations");
     app.installTranslator(&myAppTranslator);
 
     // ALLOW JUST ONE RUNING INSTANCE
@@ -91,6 +91,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<Board> ("Minesweeper", 1, 0, "Board");
     qmlRegisterType<Arcade>("Minesweeper", 1, 0, "Arcade");
     qmlRegisterUncreatableType<GeneralSettings>("Minesweeper", 1, 0, "GeneralSettings", "Cannot create object of this type.");
+    settings.loadSettings();
 
     StartupProgress sp;
 #ifndef Q_OS_ANDROID
