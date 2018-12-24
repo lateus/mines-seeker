@@ -148,7 +148,6 @@ void GeneralSettings::setLanguage(const QString &value)
 {
     if (language != value) {
         language = value;
-        QLocale::setDefault(QLocale(value));
         emit languageChanged(language);
     }
 }

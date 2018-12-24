@@ -20,6 +20,7 @@
 #include <QDir>
 #include <QStandardPaths>
 #include <QMessageBox>
+#include <QLockFile>
 
 int main(int argc, char *argv[])
 {
@@ -38,20 +39,6 @@ int main(int argc, char *argv[])
     splash.show();
     app.processEvents();
 
-    // DATABASE PATH CHECKING
-    QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
-    QDir appDataDir(appDataPath);
-    if (!appDataDir.exists()) {
-        if (!appDataDir.mkpath(appDataPath)) {
-            splash.close();
-            QMessageBox::critical(nullptr, QObject::tr("ACCESS DENIED"), QObject::tr("Cannot create the folder:\n"
-                                                                                     "%1.\n"
-                                                                                     "Execute this application as root or create the folder manually.").arg(appDataPath));
-            app.processEvents();
-            return 1;
-        }
-    }
-
     // SETTINGS
     GeneralSettings settings;
 
@@ -63,6 +50,29 @@ int main(int argc, char *argv[])
     QTranslator myAppTranslator;
     myAppTranslator.load(QLocale(), QStringLiteral("mines"), QStringLiteral("_"), ":/translations");
     app.installTranslator(&myAppTranslator);
+
+    // ALLOW JUST ONE RUNING INSTANCE
+    QString lockFilePath = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + QString("/m%1.lock").arg(qApp->applicationVersion().replace('.', '_'));
+    QLockFile lockFile(lockFilePath);
+    if (!lockFile.tryLock()) {
+        QMessageBox::information(nullptr, QObject::tr("MinesSeeker"), QObject::tr("An instance of MinesSeeker is already running.\n"
+                                                                                  "Close it in order to run a new one."));
+        return 0;
+    }
+
+    // DATABASE PATH CHECKING
+    QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QDir appDataDir(appDataPath);
+    if (!appDataDir.exists()) {
+        if (!appDataDir.mkpath(appDataPath)) {
+            splash.close();
+            QMessageBox::critical(nullptr, QObject::tr("MinesSeeker"), QObject::tr("Cannot create the folder:\n"
+                                                                                   "%1.\n"
+                                                                                   "Execute this application as root or create the folder manually.").arg(appDataPath));
+            app.processEvents();
+            return 1;
+        }
+    }
 
 #ifdef Q_OS_WIN
     QFont applicationFont("Sans Serif", -1, QFont::Normal);
@@ -144,7 +154,7 @@ int main(int argc, char *argv[])
         engine.rootContext()->setContextProperty("startupManager", &sp);
 
         QObject::connect(&settings, &GeneralSettings::languageChanged, [&](const QString &newLanguage) {
-            (void)newLanguage;
+            QLocale::setDefault(QLocale(newLanguage));
             qtTranslator.load(QLocale(), QStringLiteral("qt"), QStringLiteral("_"), ":/translations");
             myAppTranslator.load(QLocale(), QStringLiteral("mines"), QStringLiteral("_"), ":/translations");
             engine.retranslate();
@@ -167,6 +177,7 @@ int main(int argc, char *argv[])
     sp.emitReadySignal();
 #endif
 
-    return app.exec();
+    int result = app.exec();
+    lockFile.unlock();
+    return result;
 }
-
