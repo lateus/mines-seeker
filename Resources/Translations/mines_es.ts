@@ -169,12 +169,12 @@
 <context>
     <name>DialogPause</name>
     <message>
-        <location filename="../../UI/DialogPause.qml" line="11"/>
+        <location filename="../../UI/DialogPause.qml" line="12"/>
         <source>PAUSED</source>
         <translation>PAUSADO</translation>
     </message>
     <message>
-        <location filename="../../UI/DialogPause.qml" line="14"/>
+        <location filename="../../UI/DialogPause.qml" line="15"/>
         <source>Click anywhere to resume</source>
         <translation>Click dondequiera para continuar</translation>
     </message>
@@ -342,22 +342,44 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../Controller/main.cpp" line="85"/>
+        <location filename="../../Controller/main.cpp" line="58"/>
+        <location filename="../../Controller/main.cpp" line="69"/>
+        <source>MinesSeeker</source>
+        <translation>MinesSeeker</translation>
+    </message>
+    <message>
+        <location filename="../../Controller/main.cpp" line="58"/>
+        <source>An instance of MinesSeeker is already running.
+Close it in order to run a new one.</source>
+        <translation>Una instancia de MinesSeeker ya está en ejecución.
+Debes cerrarla para poder ejecutar una nueva.</translation>
+    </message>
+    <message>
+        <location filename="../../Controller/main.cpp" line="69"/>
+        <source>Cannot create the folder:
+%1.
+Execute this application as root or create the folder manually.</source>
+        <translation>No se puede crear el directorio:
+%1.
+Ejecute esta aplicación como administrador o cree el directorio manualmente.</translation>
+    </message>
+    <message>
+        <location filename="../../Controller/main.cpp" line="125"/>
         <source>Loading fonts...</source>
         <translation>Cargando fuentes...</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="104"/>
+        <location filename="../../Controller/main.cpp" line="144"/>
         <source>Loading scores...</source>
         <translation>Cargando récords...</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="111"/>
+        <location filename="../../Controller/main.cpp" line="151"/>
         <source>Registering C++ types into QML engine...</source>
         <translation>Registrando los tipos de C++ en QML...</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="125"/>
+        <location filename="../../Controller/main.cpp" line="165"/>
         <source>Loading UI...</source>
         <translation>Cargando la interfaz de usuario...</translation>
     </message>
