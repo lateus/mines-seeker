@@ -17,11 +17,14 @@
 #include <QLibraryInfo>
 #include <QQuickView>
 #include <QSplashScreen>
+#include <QDir>
+#include <QStandardPaths>
+#include <QMessageBox>
 
 int main(int argc, char *argv[])
 {
     // To bulk data in RecordsManager
-//    freopen("err.txt", "a+", stderr);
+    //    freopen("err.txt", "a+", stderr);
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QLocale::setDefault(QLocale::English);
@@ -34,6 +37,20 @@ int main(int argc, char *argv[])
     QSplashScreen splash(QPixmap(":/images/Logo512_BG.png").scaledToHeight(350, Qt::SmoothTransformation));
     splash.show();
     app.processEvents();
+
+    // DATABASE PATH CHECKING
+    QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    QDir appDataDir(appDataPath);
+    if (!appDataDir.exists()) {
+        if (!appDataDir.mkpath(appDataPath)) {
+            splash.close();
+            QMessageBox::critical(nullptr, QObject::tr("ACCESS DENIED"), QObject::tr("Cannot create the folder:\n"
+                                                                                     "%1.\n"
+                                                                                     "Execute this application as root or create the folder manually.").arg(appDataPath));
+            app.processEvents();
+            return 1;
+        }
+    }
 
     // SETTINGS
     GeneralSettings settings;
@@ -86,7 +103,6 @@ int main(int argc, char *argv[])
         app.processEvents();
     } );
 
-
     QObject::connect( &sp, &StartupProgress::readyToLoadMainQMLFile, [&]()
     {
 #ifndef Q_OS_ANDROID
@@ -116,7 +132,7 @@ int main(int argc, char *argv[])
 #ifndef Q_OS_ANDROID
         sp.setProgressMessage(QObject::tr("Loading scores..."));
 #endif
-        QString databaseFile = app.applicationDirPath() + "/records.db";
+        QString databaseFile = appDataPath + "/records.db";
         static RecordsManager recordManager(databaseFile);
 
         // QML ENGINE
