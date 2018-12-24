@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/license">
-        <file>COPYING.GPLv2</file>
-    </qresource>
-</RCC>

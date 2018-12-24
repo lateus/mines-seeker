@@ -36,7 +36,6 @@ lupdate_only {
 RESOURCES += UI/qml.qrc \
     Resources/Images/images.qrc \
     Resources/qt.qrc \
-    Resources/license.qrc \
     Resources/Sounds/sounds.qrc \
     Resources/Font/fonts.qrc \
     Resources/Translations/translations.qrc
