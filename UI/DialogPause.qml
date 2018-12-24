@@ -5,7 +5,7 @@ Dialog {
     id: pauseDialog
 
     anchors.centerIn: parent
-    implicitWidth: 200
+    implicitWidth: 250
 
     modal: true
 
