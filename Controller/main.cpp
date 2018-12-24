@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     app.setApplicationName("MinesSeeker");
     app.setApplicationVersion("1.0");
 
-    QSplashScreen splash(QPixmap(":/images/Logo512_BG.png").scaledToHeight(350, Qt::SmoothTransformation));
+    QSplashScreen splash(QPixmap(":/images/Logo512_BG.png").scaledToHeight(350, Qt::SmoothTransformation), Qt::WindowFlags() | Qt::WindowStaysOnTopHint);
     splash.show();
     app.processEvents();
 
