@@ -21,6 +21,7 @@
 #include <QStandardPaths>
 #include <QMessageBox>
 #include <QLockFile>
+#include <QIcon>
 
 int main(int argc, char *argv[])
 {
@@ -34,6 +35,7 @@ int main(int argc, char *argv[])
     app.setOrganizationName("TheCrowporation");
     app.setApplicationName("MinesSeeker");
     app.setApplicationVersion("1.0");
+    app.setWindowIcon(QIcon(":/images/appIcon.png"));
 
     QSplashScreen splash(QPixmap(":/images/Logo512_BG.png").scaledToHeight(350, Qt::SmoothTransformation), Qt::WindowFlags() | Qt::WindowStaysOnTopHint);
     splash.show();
