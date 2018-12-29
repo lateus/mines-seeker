@@ -58,6 +58,9 @@ win32 {
 }
 
 DISTFILES += \
+    README.md \
+    TODO.md \
+    LICENSE.GPLv2 \
     android/AndroidManifest.xml \
     android/gradle/wrapper/gradle-wrapper.jar \
     android/gradlew \
