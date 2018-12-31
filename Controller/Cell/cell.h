@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QTimer>
 
+Q_DECLARE_METATYPE(class Cell);
+
 class Cell : public QObject
 {
     Q_OBJECT
