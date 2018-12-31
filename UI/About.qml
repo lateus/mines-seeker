@@ -28,7 +28,7 @@ Dialog {
     property bool simple: false
     property string headerString: "<b>The Crowporation</b> presents:<br>" +
                                   "<b>" + Qt.application.name + " " + Qt.application.version + "</b>" +
-                                  "<br><i>Copyright © 2018 Carlos Enrique Pérez Sánchez.</i>"
+                                  "<br><i>Copyright © 2019 Carlos Enrique Pérez Sánchez.</i>"
     property string aboutText: qsTr("<i>This program is under the <b>GPL v2</b>.</i><br>" +
                                     "This program is distributed in the hope that it will be useful," +
                                     " but <b><i>without any warranty</i></b>; without even the implied warranty of " +
@@ -38,7 +38,7 @@ Dialog {
                                     "along with this program. " +
                                     "If not, see <a href=\"%1\">%1</a>.<br>").arg("http://www.gnu.org/licenses/") +
                                qsTr("<br><b>Contact info: </b><i><a href=\"%1\">thecrowporation@gmail.com</a>.</i><br>").arg("mailto:thecrowporation@gmail.com")
-    property string changelogText: qsTr("<b>v1.0</b> [Oct 10, 2018]<br>" +
+    property string changelogText: qsTr("<b>v1.0</b> [Jan 1, 2019]<br>" +
                                         "<b>Initial version</b><br>" +
                                         "<i>   Rmv:</i> <u>Removed cryptographical protection from the database due to bugs</u><br>" +
                                         "<i>   New:</i> Added mines counter<br>" +

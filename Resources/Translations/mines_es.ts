@@ -14,9 +14,13 @@
         <translation>&lt;br&gt;&lt;b&gt;Contacto: &lt;/b&gt;&lt;i&gt;&lt;a href=&quot;%1&quot;&gt;thecrowporation@gmail.com&lt;/a&gt;.&lt;/i&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="41"/>
         <source>&lt;b&gt;v1.0&lt;/b&gt; [Oct 10, 2018]&lt;br&gt;&lt;b&gt;Initial version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removed cryptographical protection from the database due to bugs&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added mines counter&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a progress bar&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added internationalization support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added spanish translation&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added splash screen&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added more sound effects&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a busy indicator&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added &lt;i&gt;Preferences&lt;/i&gt; menu&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added option to reveal siblings with a single click&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added company logo&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Now the database access is asynchronous&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved accesibility&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved multimedia support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved UI performance&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Fixed a board bug that causes an overflow&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Minor bug fixes&lt;br&gt;&lt;br&gt;</source>
-        <translation>&lt;b&gt;v1.0&lt;/b&gt; [Oct 10, 2018]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la protección criptográfica de la base de datos debido a errores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes con un solo clic&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
+        <translation type="vanished">&lt;b&gt;v1.0&lt;/b&gt; [Oct 10, 2018]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la protección criptográfica de la base de datos debido a errores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes con un solo clic&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../UI/About.qml" line="41"/>
+        <source>&lt;b&gt;v1.0&lt;/b&gt; [Jan 1, 2019]&lt;br&gt;&lt;b&gt;Initial version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removed cryptographical protection from the database due to bugs&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added mines counter&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a progress bar&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added internationalization support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added spanish translation&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added splash screen&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added more sound effects&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a busy indicator&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added &lt;i&gt;Preferences&lt;/i&gt; menu&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added option to reveal siblings with a single click&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added company logo&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Now the database access is asynchronous&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved accesibility&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved multimedia support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved UI performance&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Fixed a board bug that causes an overflow&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Minor bug fixes&lt;br&gt;&lt;br&gt;</source>
+        <translation>&lt;b&gt;v1.0&lt;/b&gt; [Ene 1, 2019]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la protección criptográfica de la base de datos debido a errores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes con un solo clic&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../../UI/About.qml" line="62"/>
@@ -270,7 +274,7 @@
         <translation>Pausa el juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="127"/>
+        <location filename="../../UI/GameToolbar.qml" line="124"/>
         <source>Mines:</source>
         <translation>Minas:</translation>
     </message>
@@ -342,20 +346,20 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../Controller/main.cpp" line="58"/>
-        <location filename="../../Controller/main.cpp" line="69"/>
+        <location filename="../../Controller/main.cpp" line="60"/>
+        <location filename="../../Controller/main.cpp" line="71"/>
         <source>MinesSeeker</source>
         <translation>MinesSeeker</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="58"/>
+        <location filename="../../Controller/main.cpp" line="60"/>
         <source>An instance of MinesSeeker is already running.
 Close it in order to run a new one.</source>
         <translation>Una instancia de MinesSeeker ya está en ejecución.
 Debes cerrarla para poder ejecutar una nueva.</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="69"/>
+        <location filename="../../Controller/main.cpp" line="71"/>
         <source>Cannot create the folder:
 %1.
 Execute this application as root or create the folder manually.</source>
@@ -364,22 +368,22 @@ Execute this application as root or create the folder manually.</source>
 Ejecute esta aplicación como administrador o cree el directorio manualmente.</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="125"/>
+        <location filename="../../Controller/main.cpp" line="127"/>
         <source>Loading fonts...</source>
         <translation>Cargando fuentes...</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="144"/>
+        <location filename="../../Controller/main.cpp" line="146"/>
         <source>Loading scores...</source>
         <translation>Cargando récords...</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="151"/>
+        <location filename="../../Controller/main.cpp" line="153"/>
         <source>Registering C++ types into QML engine...</source>
         <translation>Registrando los tipos de C++ en QML...</translation>
     </message>
     <message>
-        <location filename="../../Controller/main.cpp" line="165"/>
+        <location filename="../../Controller/main.cpp" line="167"/>
         <source>Loading UI...</source>
         <translation>Cargando la interfaz de usuario...</translation>
     </message>
@@ -446,27 +450,27 @@ Ejecute esta aplicación como administrador o cree el directorio manualmente.</t
 <context>
     <name>UIArcade</name>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="19"/>
+        <location filename="../../UI/UIArcade.qml" line="18"/>
         <source>Beginner</source>
         <translation>Principiante</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="19"/>
+        <location filename="../../UI/UIArcade.qml" line="18"/>
         <source>Medium</source>
         <translation>Intermedio</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="19"/>
+        <location filename="../../UI/UIArcade.qml" line="18"/>
         <source>Expert</source>
         <translation>Experto</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="19"/>
+        <location filename="../../UI/UIArcade.qml" line="18"/>
         <source>Custom</source>
         <translation>Personalizado</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="82"/>
+        <location filename="../../UI/UIArcade.qml" line="81"/>
         <source>Drag right to open menu</source>
         <translation>Arrastre a la derecha para abrir el menú</translation>
     </message>
@@ -474,7 +478,7 @@ Ejecute esta aplicación como administrador o cree el directorio manualmente.</t
 <context>
     <name>mainqml</name>
     <message>
-        <location filename="../../UI/mainqml.qml" line="16"/>
+        <location filename="../../UI/mainqml.qml" line="15"/>
         <source>Mines Seeker</source>
         <translation>Buscaminas</translation>
     </message>
