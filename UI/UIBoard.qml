@@ -6,6 +6,8 @@ import QtQuick.Layouts 1.12
 // C++ imports
 import Minesweeper 1.0
 
+// Here are dependences with C++ code: max rows and columns. update each as appropiate
+
 Rectangle {
     id: root
 

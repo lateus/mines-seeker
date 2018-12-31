@@ -3,12 +3,9 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 import QtQuick.Layouts 1.12
 import QtMultimedia 5.12
-import QtGraphicalEffects 1.12
 
 // C++ imports
 import Minesweeper 1.0
-
-// Here are dependences with C++ code: max rows and columns. update each as appropiate
 
 Item {
     id: root
