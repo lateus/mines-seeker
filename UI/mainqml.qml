@@ -29,12 +29,20 @@ ApplicationWindow {
 
 
     FastBlur {
-        id: blurEffect
+        id: blurEffectPause
         visible: radius > 0
         anchors.fill: backgroundRectangle
         source: backgroundRectangle
 
-//        cached: true
+        Behavior on radius { NumberAnimation {} }
+    }
+    FastBlur {
+        id: blurEffectMenu
+        visible: radius > 0
+        anchors.fill: backgroundRectangle
+        source: backgroundRectangle
+        radius: uiArcade.menu.position * 128
+
         Behavior on radius { NumberAnimation {} }
     }
 }

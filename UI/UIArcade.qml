@@ -15,6 +15,7 @@ Item {
 
     property alias arcade: arcadeData
     property alias gameMode: boardFrontend.mode
+    property alias menu: gameMenu
 
     property bool lastGameCleared: false
     property string gameModeString: gameMode === Board.BEGINNER ? qsTr("Beginner") : gameMode === Board.MEDIUM ? qsTr("Medium") : gameMode === Board.EXPERT ? qsTr("Expert") : qsTr("Custom")
@@ -231,10 +232,10 @@ Item {
         id: pauseDialog
 
         onAboutToShow: {
-            blurEffect.radius = 128
+            blurEffectPause.radius = 128
         }
         onAboutToHide: {
-            blurEffect.radius = 0
+            blurEffectPause.radius = 0
         }
     }
 
