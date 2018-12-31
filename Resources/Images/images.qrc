@@ -29,6 +29,7 @@
         <file>Arcade/suspicious.svg</file>
         <file>Arcade/ic_volume_off_24px.svg</file>
         <file>Arcade/ic_volume_up_24px.svg</file>
+        <file>Arcade/ic_menu_24px.svg</file>
     </qresource>
     <qresource prefix="/images">
         <file>appIcon.png</file>
