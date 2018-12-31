@@ -186,62 +186,62 @@
 <context>
     <name>GameMenu</name>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="46"/>
+        <location filename="../../UI/GameMenu.qml" line="45"/>
         <source>Play mode</source>
         <translation>Modo de juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="47"/>
+        <location filename="../../UI/GameMenu.qml" line="46"/>
         <source>Beginner</source>
         <translation>Principiante</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="48"/>
+        <location filename="../../UI/GameMenu.qml" line="47"/>
         <source>Medium</source>
         <translation>Intermedio</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="49"/>
+        <location filename="../../UI/GameMenu.qml" line="48"/>
         <source>Expert</source>
         <translation>Experto</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="50"/>
+        <location filename="../../UI/GameMenu.qml" line="49"/>
         <source>Custom</source>
         <translation>Personalizado</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="51"/>
+        <location filename="../../UI/GameMenu.qml" line="50"/>
         <source>Statistics</source>
         <translation>Estadísticas</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="52"/>
+        <location filename="../../UI/GameMenu.qml" line="51"/>
         <source>Scores</source>
         <translation>Récords</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="53"/>
+        <location filename="../../UI/GameMenu.qml" line="52"/>
         <source>Settings</source>
         <translation>Configuración</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="54"/>
+        <location filename="../../UI/GameMenu.qml" line="53"/>
         <source>Preferences</source>
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="55"/>
+        <location filename="../../UI/GameMenu.qml" line="54"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="57"/>
+        <location filename="../../UI/GameMenu.qml" line="56"/>
         <source>About Qt</source>
         <translation>Acerca de Qt</translation>
     </message>
     <message>
-        <location filename="../../UI/GameMenu.qml" line="58"/>
+        <location filename="../../UI/GameMenu.qml" line="57"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
@@ -249,32 +249,37 @@
 <context>
     <name>GameToolbar</name>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="23"/>
+        <location filename="../../UI/GameToolbar.qml" line="28"/>
+        <source>Open menu</source>
+        <translation>Abrir menú</translation>
+    </message>
+    <message>
+        <location filename="../../UI/GameToolbar.qml" line="42"/>
         <source>New game</source>
         <translation>Nuevo juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="32"/>
+        <location filename="../../UI/GameToolbar.qml" line="49"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="34"/>
+        <location filename="../../UI/GameToolbar.qml" line="51"/>
         <source>Start a new game</source>
         <translation>Inicia un nuevo juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="71"/>
+        <location filename="../../UI/GameToolbar.qml" line="88"/>
         <source>Space</source>
         <translation>Barra espaciadora</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="73"/>
+        <location filename="../../UI/GameToolbar.qml" line="90"/>
         <source>Pause the game</source>
         <translation>Pausa el juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="124"/>
+        <location filename="../../UI/GameToolbar.qml" line="141"/>
         <source>Mines:</source>
         <translation>Minas:</translation>
     </message>
@@ -470,9 +475,8 @@ Ejecute esta aplicación como administrador o cree el directorio manualmente.</t
         <translation>Personalizado</translation>
     </message>
     <message>
-        <location filename="../../UI/UIArcade.qml" line="81"/>
         <source>Drag right to open menu</source>
-        <translation>Arrastre a la derecha para abrir el menú</translation>
+        <translation type="vanished">Arrastre a la derecha para abrir el menú</translation>
     </message>
 </context>
 <context>
