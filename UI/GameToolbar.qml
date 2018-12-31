@@ -18,14 +18,31 @@ Rectangle {
     property alias pauseGameButton: roundButtonPause
     property alias minesLeftGroup: remainingMinesGroup
 
+    ToolButton {
+        id: toolButtonMenu
+        icon.source: "qrc:/images/arcade/Arcade/ic_menu_24px.svg"
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.left: parent.left
+        anchors.leftMargin: 8
+
+        ToolTip.text: qsTr("Open menu")
+        ToolTip.visible: down || hovered
+
+        onClicked: {
+            if (gameMenu.opened) {
+                gameMenu.close()
+            } else {
+                gameMenu.open()
+            }
+        }
+    }
+
     Button {
         id: buttonNewGame
         text: qsTr("New game")
         anchors.verticalCenter: parent.verticalCenter
-        anchors.left: parent.left
+        anchors.left: toolButtonMenu.right
         anchors.leftMargin: 8
-        anchors.top: parent.top
-        anchors.topMargin: 8
         focusPolicy: Qt.NoFocus
         highlighted: enabled && !roundButtonPause.enabled
 

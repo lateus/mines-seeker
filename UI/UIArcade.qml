@@ -61,32 +61,6 @@ Item {
         }
     }
 
-    Image {
-        id: imageArrow
-        anchors.left: parent.left
-        anchors.leftMargin: arrowMenuHoverMouseArea.containsMouse ? -18 : -24
-        anchors.verticalCenter: parent.verticalCenter
-
-        source: "qrc:/images/arcade/Arcade/arrowMenuPanel.svg"
-        sourceSize: "48x512"
-
-        MouseArea {
-            id: arrowMenuHoverMouseArea
-            anchors.fill: imageArrow
-            hoverEnabled: true
-            acceptedButtons: Qt.NoButton
-        }
-
-        ToolTip {
-            text: qsTr("Drag right to open menu")
-            visible: arrowMenuHoverMouseArea.containsMouse
-            x: arrowMenuHoverMouseArea.mouseX + 10
-            y: arrowMenuHoverMouseArea.mouseY - 10
-        }
-
-        Behavior on anchors.leftMargin { NumberAnimation {} }
-    }
-
 
     // New game with CTRL+N
     Shortcut {

@@ -17,16 +17,11 @@
     </qresource>
     <qresource prefix="/images/arcade">
         <file>Arcade/ic_pause_24px.svg</file>
-        <file>Arcade/arrowMenuPanel.svg</file>
-        <file>Arcade/angry.svg</file>
-        <file>Arcade/happy.svg</file>
         <file>Arcade/license.svg</file>
         <file>Arcade/medal0.svg</file>
         <file>Arcade/medal1.svg</file>
         <file>Arcade/medal2.svg</file>
-        <file>Arcade/ninja.svg</file>
         <file>Arcade/scores.svg</file>
-        <file>Arcade/suspicious.svg</file>
         <file>Arcade/ic_volume_off_24px.svg</file>
         <file>Arcade/ic_volume_up_24px.svg</file>
         <file>Arcade/ic_menu_24px.svg</file>

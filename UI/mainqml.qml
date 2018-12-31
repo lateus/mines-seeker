@@ -10,7 +10,7 @@ ApplicationWindow {
     id: mainWindow
     visible: true
 
-    minimumWidth: 460
+    minimumWidth: 550
     minimumHeight: 500
     title: qsTr("Mines Seeker")
 

@@ -9,7 +9,6 @@ Drawer {
     id: drawer
     width: root.width/3 < 250 ? 250 : root.width/3
     height: root.height
-    dragMargin: 3*Qt.styleHints.startDragDistance
 
     property alias gameMenuListModel: listModelMode
     property alias gameMenuListView: listView
