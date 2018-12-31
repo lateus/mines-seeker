@@ -103,8 +103,8 @@ public:
     static const int expertColumns   = 30;
     static const int expertMines     = 99;
 
-    static const int maxRows         = 40;
-    static const int maxCols         = 40;
+    static const int maxRows         = 16;
+    static const int maxCols         = 30;
 
     inline static int getMaxRows() { return maxRows; }
     inline static int getMaxColumns() { return maxCols; }

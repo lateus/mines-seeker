@@ -42,7 +42,7 @@ Dialog {
                     Layout.fillWidth: true
 
                     from: 5
-                    to: 50 // must match the C++ value
+                    to: 16 // must match the C++ value
                     value: boardFrontend.board.customGameRows
                 }
             }
@@ -56,7 +56,7 @@ Dialog {
                     Layout.fillWidth: true
 
                     from: 5
-                    to: 50 // must match the C++ value
+                    to: 30 // must match the C++ value
                     value: boardFrontend.board.customGameColumns
                 }
             }
