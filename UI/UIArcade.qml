@@ -3,6 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 import QtQuick.Layouts 1.12
 import QtMultimedia 5.12
+import QtGraphicalEffects 1.12
 
 // C++ imports
 import Minesweeper 1.0
@@ -200,7 +201,7 @@ Item {
     }
 
 
-    // Menus, windows and Popups
+    // Menus, dialogs and Popups
     GameLanguage {
         id: menuLanguage
     }
@@ -228,6 +229,13 @@ Item {
 
     DialogPause {
         id: pauseDialog
+
+        onAboutToShow: {
+            blurEffect.radius = 128
+        }
+        onAboutToHide: {
+            blurEffect.radius = 0
+        }
     }
 
     DialogConfirmMode {

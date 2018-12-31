@@ -27,8 +27,5 @@ Dialog {
         if (arcade.paused) {
             arcade.startTiming()
         }
-        boardFrontend.visible = true
-        rectangleMenu.visible = true
-        imageArrow.visible = true
     }
 } // pauseDialog

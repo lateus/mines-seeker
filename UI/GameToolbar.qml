@@ -75,9 +75,6 @@ Rectangle {
 
         function pause() {
             arcade.pauseGame()
-            boardFrontend.visible = false
-            rectangleMenu.visible = false
-            imageArrow.visible = false
             pauseDialog.open()
         }
 
