@@ -26,7 +26,7 @@
 int main(int argc, char *argv[])
 {
     // To bulk data in RecordsManager
-    //    freopen("err.txt", "a+", stderr);
+//        freopen("/mnt/sdcard/err.txt", "a+", stderr);
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QLocale::setDefault(QLocale::English);
@@ -172,6 +172,8 @@ int main(int argc, char *argv[])
         } else {
 #ifndef Q_OS_ANDROID
             qv.close();
+#else
+            splash.close();
 #endif
         }
     });
