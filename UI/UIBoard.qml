@@ -2,7 +2,6 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 import QtQuick.Layouts 1.12
-import QtMultimedia 5.12
 
 // C++ imports
 import Minesweeper 1.0
@@ -20,6 +19,9 @@ Rectangle {
     property real progress:        board.progress
     property bool uiReady:         false
 
+    property real widthHightRootReason: width/height
+    property real rowColumnReason: columns/rows
+
     Material.primary: "#DDDDDD"
 
     color: Material.primary
@@ -34,20 +36,18 @@ Rectangle {
         spacing: -1
 
         Repeater {
-            model: 1600
+            model: 480
             onItemAdded: {
                 if ((index + 1) % 10 === 0) {
-                    startupManager.progress = (index + 1)/1600
+                    startupManager.progress = (index + 1)/480
                 }
-                if (index === 1599) {
+                if (index === 479) {
                     uiReady = true
                 }
             }
 
             delegate: UICell {
-                property real widthHightRootReason: root.width/root.height
-                property real rowColumnReason: columns/rows
-                size: !uiReady ? 0 : widthHightRootReason < rowColumnReason ? (root.width)/columns : (root.height)/rows
+                size: !uiReady ? 0 : root.widthHightRootReason < root.rowColumnReason ? (root.width)/columns : (root.height)/rows
                 visible: uiReady && row >= 0 && column >= 0
                 cell: board.itemAt(index)
                 gameRunning: board.running
