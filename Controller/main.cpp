@@ -126,20 +126,20 @@ int main(int argc, char *argv[])
 #ifndef Q_OS_ANDROID
         sp.setProgressMessage(QObject::tr("Loading fonts..."));
 #endif
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-Black.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-BlackIt.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-Bold.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-BoldIt.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-ExtraLight.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-ExtraLightIt.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-It.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-Light.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-LightIt.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-Medium.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-MediumIt.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-Regular.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-Semibold.otf");
-        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro-SemiboldIt.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-Black.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-BlackIt.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-Bold.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-BoldIt.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-ExtraLight.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-ExtraLightIt.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-It.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-Light.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-LightIt.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-Medium.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-MediumIt.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-Regular.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-Semibold.otf");
+        QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-SemiboldIt.otf");
 
         // DATABASE
 #ifndef Q_OS_ANDROID
