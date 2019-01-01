@@ -14,13 +14,11 @@ ApplicationWindow {
     minimumHeight: 500
     title: qsTr("Mines Seeker")
 
-    Material.accent: Material.Blue
-    Material.primary: Material.BlueGrey
-
     Rectangle {
         id: backgroundRectangle
         anchors.fill: parent
         color: "#DDDDDD"
+
         UIArcade {
             id: uiArcade
             anchors.fill: parent

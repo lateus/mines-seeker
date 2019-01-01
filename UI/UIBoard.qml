@@ -26,7 +26,7 @@ Rectangle {
 
     Material.primary: "#DDDDDD"
 
-    color: Material.primary
+    color: "transparent"
 
     Grid {
         id: grid
