@@ -12,7 +12,7 @@
         <file>Ripple.qml</file>
         <file>License.qml</file>
         <file>Loading.qml</file>
-        <file>LoadingPopup.qml</file>
+        <file>LoadingSplash.qml</file>
         <file>SavingPopup.qml</file>
         <file>Preferences.qml</file>
         <file>DialogInputRecord.qml</file>

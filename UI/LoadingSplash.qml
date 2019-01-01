@@ -4,7 +4,7 @@ import QtQuick.Controls.Material 2.12
 import QtQuick.Layouts 1.12
 
 Popup {
-    id: loadingPopup
+    id: loadingSplash
 
     visible: true
     closePolicy: Popup.NoAutoClose
