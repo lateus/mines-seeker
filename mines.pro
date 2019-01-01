@@ -37,7 +37,7 @@ RESOURCES += UI/qml.qrc \
     Resources/Images/images.qrc \
     Resources/qt.qrc \
     Resources/Sounds/sounds.qrc \
-    Resources/Font/fonts.qrc \
+    Resources/Fonts/fonts.qrc \
     Resources/Translations/translations.qrc
 
 TRANSLATIONS += Resources/Translations/mines_es.ts
