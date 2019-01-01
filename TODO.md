@@ -6,7 +6,6 @@
 3. (...) And once updated, some buttons are moved partially outside their parent dialog (maybe a Qt Bug?...)
 
 ## PENDING
-1. Make the UIBoard a Table View
-2. Deploy to android devices
+1. Deploy to android devices
 2. Make a class to manage styles
 3. Add option to generate only games that can be resolved without gessing
