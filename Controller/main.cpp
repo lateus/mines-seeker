@@ -141,6 +141,15 @@ int main(int argc, char *argv[])
         QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-Semibold.otf");
         QFontDatabase::addApplicationFont(":/fonts/SourceCodePro/SourceCodePro-SemiboldIt.otf");
 
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777B.ttf");
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777Bd.ttf");
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777BI.ttf");
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777I.ttf");
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777L.ttf");
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777LI.ttf");
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777Lt.ttf");
+        QFontDatabase::addApplicationFont(":/fonts/HUMNST777/HUM777N.ttf");
+
         // DATABASE
 #ifndef Q_OS_ANDROID
         sp.setProgressMessage(QObject::tr("Loading scores..."));

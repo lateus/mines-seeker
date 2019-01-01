@@ -37,6 +37,10 @@ Popup {
             sourceSize: "96x96"
         }
 
+//        Text {
+//            id: imageCUJAEName
+//            text: qsTr("text")
+//        }
         Image {
             id: imageCUJAEName
             height: 64
