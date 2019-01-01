@@ -15,7 +15,6 @@ Popup {
 
     Item {
         id: itemCujaeInfo
-        y: 8
         height: 170
         anchors.rightMargin: 8
         anchors.leftMargin: 8
@@ -34,29 +33,27 @@ Popup {
             anchors.bottomMargin: 16
             fillMode: Image.PreserveAspectFit
             source: "qrc:/splash/Splash/cujae.png"
-            sourceSize: "96x96"
+            sourceSize: Qt.size(width, height)
         }
 
-//        Text {
-//            id: imageCUJAEName
-//            text: qsTr("text")
-//        }
-        Image {
+        Text {
             id: imageCUJAEName
-            height: 64
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 0
             anchors.left: parent.left
-            anchors.leftMargin: 0
-            fillMode: Image.PreserveAspectFit
-            source: "qrc:/splash/Splash/cujaeName.png"
-            sourceSize: "309x64"
+            anchors.leftMargin: 82
+
+            text: "cujae"
+            font.family: "Humnst777"
+            font.pointSize: 24
+            font.bold: true
+            color: "#086e54"
         }
 
         Image {
             id: imageTiger
-            width: 96
-            height: 96
+            width: 106
+            height: 106
             anchors.top: parent.top
             anchors.topMargin: 0
             anchors.horizontalCenter: imageTigerName.horizontalCenter
@@ -64,19 +61,22 @@ Popup {
             anchors.bottomMargin: 12
             fillMode: Image.PreserveAspectFit
             source: "qrc:/splash/Splash/tiger.png"
-            sourceSize: "96x96"
+            sourceSize: Qt.size(width, height)
         }
 
-        Image {
+        Text {
             id: imageTigerName
-            height: 42
             anchors.top: imageCUJAEName.top
             anchors.topMargin: 0
             anchors.right: parent.right
-            anchors.rightMargin: 0
-            fillMode: Image.PreserveAspectFit
-            source: "qrc:/splash/Splash/tigerName.png"
-            sourceSize: "235x42"
+            anchors.rightMargin: 28
+
+            text: qsTr("Faculty of Engineering\nAutomation and Biomedicine")
+            horizontalAlignment: Text.AlignHCenter
+            font.family: "Humnst777"
+            font.pointSize: 12
+            font.bold: true
+            color: "#333333"
         }
     }
 
@@ -91,7 +91,6 @@ Popup {
 
     Text {
         id: textAppVersion
-        y: 263
         text: Qt.application.version
         font.pointSize: 16
         anchors.bottom: textAppName.bottom

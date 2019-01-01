@@ -35,8 +35,6 @@
     <qresource prefix="/splash">
         <file>Splash/cujae.png</file>
         <file>Splash/tiger.png</file>
-        <file>Splash/cujaeName.png</file>
-        <file>Splash/tigerName.png</file>
     </qresource>
     <qresource prefix="/languages">
         <file>Languages/en.svg</file>
