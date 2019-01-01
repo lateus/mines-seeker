@@ -39,6 +39,7 @@ Item {
 
         gameMenu.gameMenuListModel.setProperty(gameMode, "itemChecked", true)
         recordManager.setCurrentTable(gameMode)
+        gameMenu
     }
 
     focus: true
@@ -69,13 +70,6 @@ Item {
             if (rectangleMenu.newGameButton.enabled) {
                 rectangleMenu.newGameButton.newGame()
             }
-        }
-    }
-
-    // Pause the game with SPACE
-    Keys.onSpacePressed: {
-        if (rectangleMenu.pauseGameButton.enabled) {
-            rectangleMenu.pauseGameButton.pause()
         }
     }
 

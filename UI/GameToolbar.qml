@@ -86,6 +86,15 @@ Rectangle {
         highlighted: true
         enabled: arcade.running && !arcade.paused
 
+        Shortcut {
+            sequence: "Space"
+            onActivated: {
+                if (roundButtonPause.enabled) {
+                    roundButtonPause.pause()
+                }
+            }
+        }
+
         property string pauseGameShortcut: qsTr("Space")
 
         ToolTip.text: qsTr("Pause the game") + " (" + pauseGameShortcut + ")"
