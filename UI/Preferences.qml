@@ -83,7 +83,9 @@ Dialog {
                     sliderVolume.previousValue = sliderVolume.value
                     sliderVolume.value = 0.0
                 }
-                updateButtonsStates()
+                if (root.opened) {
+                    updateButtonsStates()
+                }
             }
         }
 
@@ -110,7 +112,9 @@ Dialog {
                 if (toolButtonMute.checked || ( !toolButtonMute.enabled && (value > 0.0))) {
                     previousValue = value
                 }
-                updateButtonsStates()
+                if (root.opened) {
+                    updateButtonsStates()
+                }
             }
 
             property real previousValue: settings.volume
@@ -141,7 +145,9 @@ Dialog {
             checked: settings.oneClickRevealSiblings
 
             onCheckedChanged: {
-                updateButtonsStates()
+                if (root.opened) {
+                    updateButtonsStates()
+                }
             }
         }
 
@@ -157,7 +163,9 @@ Dialog {
             currentIndex: settings.boardGeneration
 
             onCurrentIndexChanged: {
-                updateButtonsStates()
+                if (root.opened) {
+                    updateButtonsStates()
+                }
             }
 
             model: [qsTr("First click never hits a mine"), qsTr("Totally random")]
