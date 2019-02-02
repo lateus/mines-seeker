@@ -41,8 +41,8 @@ Dialog {
     property string changelogText: qsTr("<b>v1.0.1</b> [Feb 2, 2019]<br>" +
                                         "<b>Initial version - Patch 1</b><br>" +
                                         "<i>   Fix:</i> Buttons can be clicked when holding and releasing (see <a href=\"https://bugreports.qt.io/browse/QTBUG-72811\">QTBUG-72811</a>)<br>" +
-                                        "<i>   Fix:</i> Supressed an error during startup<br>" +
-                                        "<b>v1.0</b> [Jan 1, 2019]<br>" +
+                                        "<i>   Fix:</i> Supressed an error during startup<br>") +
+                                   qsTr("<b>v1.0</b> [Jan 1, 2019]<br>" +
                                         "<b>Initial version</b><br>" +
                                         "<i>   Rmv:</i> <u>Removed cryptographical protection from the database due to bugs</u><br>" +
                                         "<i>   New:</i> Added mines counter<br>" +
