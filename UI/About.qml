@@ -38,7 +38,11 @@ Dialog {
                                     "along with this program. " +
                                     "If not, see <a href=\"%1\">%1</a>.<br>").arg("http://www.gnu.org/licenses/") +
                                qsTr("<br><b>Contact info: </b><i><a href=\"%1\">thecrowporation@gmail.com</a>.</i><br>").arg("mailto:thecrowporation@gmail.com")
-    property string changelogText: qsTr("<b>v1.0</b> [Jan 1, 2019]<br>" +
+    property string changelogText: qsTr("<b>v1.0.1</b> [Feb 2, 2019]<br>" +
+                                        "<b>Initial version - Patch 1</b><br>" +
+                                        "<i>   Fix:</i> Buttons can be clicked when holding and releasing (see <a href=\"https://bugreports.qt.io/browse/QTBUG-72811\">QTBUG-72811</a>)<br>" +
+                                        "<i>   Fix:</i> Supressed an error during startup<br>" +
+                                        "<b>v1.0</b> [Jan 1, 2019]<br>" +
                                         "<b>Initial version</b><br>" +
                                         "<i>   Rmv:</i> <u>Removed cryptographical protection from the database due to bugs</u><br>" +
                                         "<i>   New:</i> Added mines counter<br>" +
@@ -56,8 +60,8 @@ Dialog {
                                         "<i>   New:</i> Improved GUI and animations<br>" +
                                         "<i>   New:</i> Improved multimedia support<br>" +
                                         "<i>   New:</i> Improved UI performance<br>" +
-                                        "<i>   Fxd:</i> Fixed a board bug that causes an overflow<br>" +
-                                        "<i>   Fxd:</i> Minor bug fixes<br>" +
+                                        "<i>   Fix:</i> Fixed a board bug that causes an overflow<br>" +
+                                        "<i>   Fix:</i> Minor bug fixes<br>" +
                                         "<br>") +
                                    qsTr("<b>v0.3</b>a [Oct 4, 2018]<br>" +
                                         "<b>Third <i>alpha</i> version</b><br>" +
@@ -69,7 +73,7 @@ Dialog {
                                         "<i>   New:</i> Added scores<br>" +
                                         "<i>   New:</i> Save and restore the application state<br>" +
                                         "<i>   New:</i> Added sound effects<br>" +
-                                        "<i>   Fxd:</i> Several bug fixes<br>" +
+                                        "<i>   Fix:</i> Several bug fixes<br>" +
                                         "<br>") +
                                    qsTr("<b>v0.1</b>a [Sept 24, 2018]<br>" +
                                         "<b>First <i>alpha</i> version</b><br>")
