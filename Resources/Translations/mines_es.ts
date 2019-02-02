@@ -14,42 +14,55 @@
         <translation>&lt;br&gt;&lt;b&gt;Contacto: &lt;/b&gt;&lt;i&gt;&lt;a href=&quot;%1&quot;&gt;thecrowporation@gmail.com&lt;/a&gt;.&lt;/i&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="41"/>
         <source>&lt;b&gt;v1.0&lt;/b&gt; [Jan 1, 2019]&lt;br&gt;&lt;b&gt;Initial version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removed cryptographical protection from the database due to bugs&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added mines counter&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a progress bar&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added internationalization support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added spanish translation&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added splash screen&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added more sound effects&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a busy indicator&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added &lt;i&gt;Preferences&lt;/i&gt; menu&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added option to reveal siblings with a single click&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added company logo&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Now the database access is asynchronous&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved accesibility&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved multimedia support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved UI performance&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Fixed a board bug that causes an overflow&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Minor bug fixes&lt;br&gt;&lt;br&gt;</source>
-        <translation>&lt;b&gt;v1.0&lt;/b&gt; [Ene 1, 2019]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la protección criptográfica de la base de datos debido a errores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes con un solo clic&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
+        <translation type="vanished">&lt;b&gt;v1.0&lt;/b&gt; [Ene 1, 2019]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la protección criptográfica de la base de datos debido a errores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes con un solo clic&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="62"/>
+        <location filename="../../UI/About.qml" line="66"/>
         <source>&lt;b&gt;v0.3&lt;/b&gt;a [Oct 4, 2018]&lt;br&gt;&lt;b&gt;Third &lt;i&gt;alpha&lt;/i&gt; version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Score database is now cryptographically signed&lt;br&gt;&lt;br&gt;</source>
         <translation>&lt;b&gt;v0.3&lt;/b&gt;a [Oct 4, 2018]&lt;br&gt;&lt;b&gt;Tercera versión &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; La base de datos de records está ahora firmada criptográficamente&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="66"/>
         <source>&lt;b&gt;v0.2&lt;/b&gt;a [Oct 2, 2018]&lt;br&gt;&lt;b&gt;Second &lt;i&gt;alpha&lt;/i&gt; version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Drastically improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added scores&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Save and restore the application state&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added sound effects&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Several bug fixes&lt;br&gt;&lt;br&gt;</source>
-        <translation>&lt;b&gt;v0.2&lt;/b&gt;a [Oct 2, 2018]&lt;br&gt;&lt;b&gt;Segunda versión  &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; GUI y animaciones mejoradas drásticamente&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Agregados récords&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Guardado y carga del estado de la aplicación&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Efectos de sonido&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores&lt;br&gt;&lt;br&gt;</translation>
+        <translation type="vanished">&lt;b&gt;v0.2&lt;/b&gt;a [Oct 2, 2018]&lt;br&gt;&lt;b&gt;Segunda versión  &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; GUI y animaciones mejoradas drásticamente&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Agregados récords&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Guardado y carga del estado de la aplicación&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Efectos de sonido&lt;br&gt;&lt;i&gt;   Fxd:&lt;/i&gt; Corrección de errores&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="74"/>
+        <location filename="../../UI/About.qml" line="41"/>
+        <source>&lt;b&gt;v1.0.1&lt;/b&gt; [Feb 2, 2019]&lt;br&gt;&lt;b&gt;Initial version - Patch 1&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Buttons can be clicked when holding and releasing (see &lt;a href=&quot;https://bugreports.qt.io/browse/QTBUG-72811&quot;&gt;QTBUG-72811&lt;/a&gt;)&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Supressed an error during startup&lt;br&gt;</source>
+        <translation>&lt;b&gt;v1.0.1&lt;/b&gt; [Feb 2, 2019]&lt;br&gt;&lt;b&gt;Versión inicial - Parche 1&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Los botones reaccionan a un clic tras ser presionados un rato (vea &lt;a href=&quot;https://bugreports.qt.io/browse/QTBUG-72811&quot;&gt;QTBUG-72811&lt;/a&gt;)&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Suprimido un error durante el arranque&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../UI/About.qml" line="45"/>
+        <source>&lt;b&gt;v1.0&lt;/b&gt; [Jan 1, 2019]&lt;br&gt;&lt;b&gt;Initial version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removed cryptographical protection from the database due to bugs&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added mines counter&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a progress bar&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added internationalization support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added spanish translation&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added splash screen&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added more sound effects&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added a busy indicator&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added &lt;i&gt;Preferences&lt;/i&gt; menu&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added option to reveal siblings with a single click&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added company logo&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Now the database access is asynchronous&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved accesibility&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved multimedia support&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Improved UI performance&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Fixed a board bug that causes an overflow&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Minor bug fixes&lt;br&gt;&lt;br&gt;</source>
+        <translation>&lt;b&gt;v1.0&lt;/b&gt; [Ene 1, 2019]&lt;br&gt;&lt;b&gt;Versión inicial&lt;/b&gt;&lt;br&gt;&lt;i&gt;   Rmv:&lt;/i&gt; &lt;u&gt;Removida la protección criptográfica de la base de datos debido a errores&lt;/u&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido contador de minas&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida una barra de progreso&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido soporte para internacionalización&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida traducción al español&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida &quot;splash screen&quot; &lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadidos más efectos de sonido&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido un indicador de &quot;ocupado&quot;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Menú &lt;i&gt;Preferencias&lt;/i&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadida opción para revelar celdas adyacentes con un solo clic&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Añadido el logo de la compañía&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Ahora el acceso a la base de datos es asincrónico&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la accesiblidad&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorada la interfaz y las animaciones&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el soporte multimedia&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Mejorado el rendimiento de la interfaz&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Corregido un error que causaba un desbordamiento&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Corrección de errores menores&lt;br&gt;&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../UI/About.qml" line="70"/>
+        <source>&lt;b&gt;v0.2&lt;/b&gt;a [Oct 2, 2018]&lt;br&gt;&lt;b&gt;Second &lt;i&gt;alpha&lt;/i&gt; version&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Drastically improved GUI and animations&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added scores&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Save and restore the application state&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Added sound effects&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Several bug fixes&lt;br&gt;&lt;br&gt;</source>
+        <translation>&lt;b&gt;v0.2&lt;/b&gt;a [Oct 2, 2018]&lt;br&gt;&lt;b&gt;Segunda versión  &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; GUI y animaciones mejoradas drásticamente&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Agregados récords&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Guardado y carga del estado de la aplicación&lt;br&gt;&lt;i&gt;   New:&lt;/i&gt; Efectos de sonido&lt;br&gt;&lt;i&gt;   Fix:&lt;/i&gt; Corrección de errores&lt;br&gt;&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../UI/About.qml" line="78"/>
         <source>&lt;b&gt;v0.1&lt;/b&gt;a [Sept 24, 2018]&lt;br&gt;&lt;b&gt;First &lt;i&gt;alpha&lt;/i&gt; version&lt;/b&gt;&lt;br&gt;</source>
         <translation>&lt;b&gt;v0.1&lt;/b&gt;a [Sept 24, 2018]&lt;br&gt;&lt;b&gt;Primera versión &lt;i&gt;alpha&lt;/i&gt;&lt;/b&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="76"/>
+        <location filename="../../UI/About.qml" line="80"/>
         <source>Special thanks to &lt;i&gt;Edel&lt;/i&gt;, who figure out how to discover surrounded cells and how to resize the board properly.&lt;br&gt;Thanks to the users &lt;i&gt;littlerobotsoundfactory&lt;/i&gt;, &lt;i&gt;fins&lt;/i&gt;, and &lt;i&gt;mativve&lt;/i&gt; from &lt;a href=&quot;%1&quot;&gt;freesound.com&lt;/a&gt; for their free fanzy sounds effects.&lt;br&gt;</source>
         <translation>Un agradecimiento especial a &lt;i&gt;Edel&lt;/i&gt;, quien se figuró cómo descubrir las celdas adyacentes y cómo redimensionar apropiadamente el tablero. &lt;br&gt;Gracias a los usuarios &lt;i&gt;littlerobotsoundfactory&lt;/i&gt;, &lt;i&gt;fins&lt;/i&gt;, y &lt;i&gt;mativve&lt;/i&gt; de &lt;a href=&quot;%1&quot;&gt;freesound.com&lt;/a&gt; por sus divertidos y libres efectos de sonido.&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="153"/>
+        <location filename="../../UI/About.qml" line="157"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="162"/>
+        <location filename="../../UI/About.qml" line="166"/>
         <source>Changelog</source>
         <translation>Cambios</translation>
     </message>
     <message>
-        <location filename="../../UI/About.qml" line="171"/>
+        <location filename="../../UI/About.qml" line="175"/>
         <source>Greetings</source>
         <translation>Gracias</translation>
     </message>
@@ -245,37 +258,37 @@
 <context>
     <name>GameToolbar</name>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="28"/>
+        <location filename="../../UI/GameToolbar.qml" line="29"/>
         <source>Open menu</source>
         <translation>Abrir menú</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="42"/>
+        <location filename="../../UI/GameToolbar.qml" line="43"/>
         <source>New game</source>
         <translation>Nuevo juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="49"/>
+        <location filename="../../UI/GameToolbar.qml" line="50"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="51"/>
+        <location filename="../../UI/GameToolbar.qml" line="52"/>
         <source>Start a new game</source>
         <translation>Inicia un nuevo juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="88"/>
+        <location filename="../../UI/GameToolbar.qml" line="98"/>
         <source>Space</source>
         <translation>Barra espaciadora</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="90"/>
+        <location filename="../../UI/GameToolbar.qml" line="100"/>
         <source>Pause the game</source>
         <translation>Pausa el juego</translation>
     </message>
     <message>
-        <location filename="../../UI/GameToolbar.qml" line="141"/>
+        <location filename="../../UI/GameToolbar.qml" line="151"/>
         <source>Mines:</source>
         <translation>Minas:</translation>
     </message>
@@ -326,27 +339,27 @@ Automática y Biomédica</translation>
         <translation>Efectos de sonido</translation>
     </message>
     <message>
-        <location filename="../../UI/Preferences.qml" line="129"/>
+        <location filename="../../UI/Preferences.qml" line="133"/>
         <source>Arcade</source>
         <translation>Arcade</translation>
     </message>
     <message>
-        <location filename="../../UI/Preferences.qml" line="133"/>
+        <location filename="../../UI/Preferences.qml" line="137"/>
         <source>Reveal siblings with one left-click</source>
         <translation>Revelar celdas adyacentes con un clic izquierdo</translation>
     </message>
     <message>
-        <location filename="../../UI/Preferences.qml" line="163"/>
+        <location filename="../../UI/Preferences.qml" line="171"/>
         <source>First click never hits a mine</source>
         <translation>Primer clic nunca es una mina</translation>
     </message>
     <message>
-        <location filename="../../UI/Preferences.qml" line="163"/>
+        <location filename="../../UI/Preferences.qml" line="171"/>
         <source>Totally random</source>
         <translation>Totalmente aleatoria</translation>
     </message>
     <message>
-        <location filename="../../UI/Preferences.qml" line="168"/>
+        <location filename="../../UI/Preferences.qml" line="176"/>
         <source>Board generation</source>
         <translation>Generación de board</translation>
     </message>
