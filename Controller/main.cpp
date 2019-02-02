@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     app.setOrganizationName("TheCrowporation");
     app.setApplicationName("MinesSeeker");
-    app.setApplicationVersion("1.0");
+    app.setApplicationVersion("1.0.1");
     app.setWindowIcon(QIcon(":/images/appIcon.png"));
 
     QSplashScreen splash(QPixmap(":/images/Logo512_BG.png").scaledToHeight(350, Qt::SmoothTransformation), Qt::WindowFlags() | Qt::WindowStaysOnTopHint);
